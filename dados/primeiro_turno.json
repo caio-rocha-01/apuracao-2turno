@@ -1,535 +1,545 @@
 [
- {
-  "pais": "Nova Zelândia",
-  "lula": 234,
-  "flavio": 64,
-  "lula_pct": 0.7048,
-  "flavio_pct": 0.1928,
-  "validos": 332,
-  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 339
- },
- {
-  "pais": "Coreia do Sul",
-  "lula": 123,
-  "flavio": 72,
-  "lula_pct": 0.5694,
-  "flavio_pct": 0.3333,
-  "validos": 216,
-  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
- },
- {
-  "pais": "Japão",
-  "lula": 5234,
-  "flavio": 24601,
-  "lula_pct": 0.1525,
-  "flavio_pct": 0.7169,
-  "validos": 34318,
-  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10); total de válidos: Portal Mie",
-  "comparecimento": 36627
- },
- {
-  "pais": "Austrália",
-  "lula": 4562,
-  "flavio": 2579,
-  "lula_pct": 0.5398,
-  "flavio_pct": 0.3052,
-  "validos": 8451,
-  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
- },
- {
-  "pais": "China",
-  "lula": 367,
-  "flavio": 203,
-  "lula_pct": 0.5629,
-  "flavio_pct": 0.3113,
-  "validos": 652,
-  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
- },
- {
-  "pais": "Singapura",
-  "lula": 190,
-  "flavio": 92,
-  "lula_pct": 0.546,
-  "flavio_pct": 0.2644,
-  "validos": 348,
-  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
- },
- {
-  "pais": "Malásia",
-  "lula": 44,
-  "flavio": 27,
-  "lula_pct": 0.5366,
-  "flavio_pct": 0.3293,
-  "validos": 82,
-  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
- },
- {
-  "pais": "Filipinas",
-  "lula": 26,
-  "flavio": 33,
-  "lula_pct": 0.4194,
-  "flavio_pct": 0.5323,
-  "validos": 62,
-  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
- },
- {
-  "pais": "Tailândia",
-  "lula": 40,
-  "flavio": 51,
-  "lula_pct": 0.404,
-  "flavio_pct": 0.5152,
-  "validos": 99,
-  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
- },
- {
-  "pais": "Indonésia",
-  "lula": 8,
-  "flavio": 19,
-  "lula_pct": 0.2581,
-  "flavio_pct": 0.6129,
-  "validos": 31,
-  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
- },
- {
-  "pais": "Taiwan",
-  "lula": 77,
-  "flavio": 107,
-  "lula_pct": 0.3532,
-  "flavio_pct": 0.4908,
-  "validos": 218,
-  "fonte": "Resultado do 1º turno por candidato (TSE), enviado pelo autor da página"
- },
- {
-  "pais": "Índia",
-  "lula": 29,
-  "flavio": 27,
-  "lula_pct": 0.4754,
-  "flavio_pct": 0.4426,
-  "validos": 61,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10; Nova Délhi e Mumbai)",
-  "comparecimento": 61
- },
- {
-  "pais": "Emirados Árabes Unidos",
-  "lula": 512,
-  "flavio": 659,
-  "lula_pct": 0.3779,
-  "flavio_pct": 0.4863,
-  "validos": 1355,
-  "fonte": "A Tarde e Jornal Razão, com dados do TSE (1º turno, 4/10; válidos = comparecimento 1.396 − brancos 13 − nulos 28)",
-  "comparecimento": 1396
- },
- {
-  "pais": "Jordânia",
-  "lula": 675,
-  "flavio": 59,
-  "lula_pct": 0.8621,
-  "flavio_pct": 0.0754,
-  "validos": 783,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 833
- },
- {
-  "pais": "Síria",
-  "lula": 97,
-  "flavio": 7,
-  "lula_pct": 0.8981,
-  "flavio_pct": 0.0648,
-  "validos": 108,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 118
- },
- {
-  "pais": "Kuwait",
-  "lula": 54,
-  "flavio": 12,
-  "lula_pct": 0.7397,
-  "flavio_pct": 0.1644,
-  "validos": 73,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 77
- },
- {
-  "pais": "Arábia Saudita",
-  "lula": 52,
-  "flavio": 22,
-  "lula_pct": 0.6265,
-  "flavio_pct": 0.2651,
-  "validos": 83,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 84
- },
- {
-  "pais": "Catar",
-  "lula": 147,
-  "flavio": 173,
-  "lula_pct": 0.4118,
-  "flavio_pct": 0.4846,
-  "validos": 357,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 364
- },
- {
-  "pais": "Finlândia",
-  "lula": 475,
-  "flavio": 155,
-  "lula_pct": 0.6854,
-  "flavio_pct": 0.2237,
-  "validos": 693,
-  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados); comparecimento do Jornal Razão",
-  "comparecimento": 718
- },
- {
-  "pais": "Estônia",
-  "lula": 142,
-  "flavio": 19,
-  "lula_pct": 0.7474,
-  "flavio_pct": 0.1,
-  "validos": 190,
-  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados); comparecimento do Jornal Razão",
-  "comparecimento": 197
- },
- {
-  "pais": "Quênia",
-  "lula": 26,
-  "flavio": 17,
-  "lula_pct": 0.5652,
-  "flavio_pct": 0.3696,
-  "validos": 46,
-  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados)"
- },
- {
-  "pais": "Egito",
-  "lula": 46,
-  "flavio": 12,
-  "lula_pct": 0.7188,
-  "flavio_pct": 0.1875,
-  "validos": 64,
-  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados)"
- },
- {
-  "pais": "África do Sul",
-  "lula": 152,
-  "flavio": 230,
-  "lula_pct": 0.3628,
-  "flavio_pct": 0.5489,
-  "validos": 419,
-  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados)"
- },
- {
-  "pais": "Grécia",
-  "lula": 196,
-  "flavio": 230,
-  "lula_pct": 0.3968,
-  "flavio_pct": 0.4656,
-  "validos": 494,
-  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados); comparecimento do Jornal Razão",
-  "comparecimento": 508
- },
- {
-  "pais": "Chipre",
-  "lula": 24,
-  "flavio": 20,
-  "lula_pct": 0.4138,
-  "flavio_pct": 0.3448,
-  "validos": 58,
-  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados)"
- },
- {
-  "pais": "Israel",
-  "lula": 92,
-  "flavio": 523,
-  "lula_pct": 0.1307,
-  "flavio_pct": 0.7429,
-  "validos": 704,
-  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados); comparecimento do Jornal Razão",
-  "comparecimento": 730
- },
- {
-  "pais": "Moçambique",
-  "lula": 89,
-  "flavio": 113,
-  "lula_pct": 0.4159,
-  "flavio_pct": 0.528,
-  "validos": 214,
-  "fonte": "Jornal Razão e Tribuna de Jundiaí (1º turno, 4/10; válidos calculados pelos percentuais publicados)",
-  "comparecimento": 228
- },
- {
-  "pais": "Turquia",
-  "lula": 114,
-  "flavio": 37,
-  "lula_pct": 0.6951,
-  "flavio_pct": 0.2256,
-  "validos": 164,
-  "fonte": "Boatos.org e Tribuna de Jundiaí (1º turno, 4/10, total do país; válidos calculados pelos percentuais publicados)"
- },
- {
-  "pais": "Líbano",
-  "lula": 2538,
-  "flavio": 1138,
-  "lula_pct": 0.6536,
-  "flavio_pct": 0.2931,
-  "validos": 3883,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 4097
- },
- {
-  "pais": "Palestina",
-  "lula": 1078,
-  "flavio": 46,
-  "lula_pct": 0.9317,
-  "flavio_pct": 0.0398,
-  "validos": 1157,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 1202
- },
- {
-  "pais": "Dinamarca",
-  "lula": 1166,
-  "flavio": 195,
-  "lula_pct": 0.79,
-  "flavio_pct": 0.1321,
-  "validos": 1476,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 1522
- },
- {
-  "pais": "Áustria",
-  "lula": 979,
-  "flavio": 311,
-  "lula_pct": 0.6655,
-  "flavio_pct": 0.2114,
-  "validos": 1471,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 1522
- },
- {
-  "pais": "Polônia",
-  "lula": 183,
-  "flavio": 65,
-  "lula_pct": 0.6489,
-  "flavio_pct": 0.2305,
-  "validos": 282,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 291
- },
- {
-  "pais": "República Tcheca",
-  "lula": 279,
-  "flavio": 70,
-  "lula_pct": 0.7028,
-  "flavio_pct": 0.1763,
-  "validos": 397,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 411
- },
- {
-  "pais": "Eslovênia",
-  "lula": 61,
-  "flavio": 25,
-  "lula_pct": 0.6224,
-  "flavio_pct": 0.2551,
-  "validos": 98,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 103
- },
- {
-  "pais": "Croácia",
-  "lula": 29,
-  "flavio": 17,
-  "lula_pct": 0.6042,
-  "flavio_pct": 0.3542,
-  "validos": 48,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 52
- },
- {
-  "pais": "Angola",
-  "lula": 147,
-  "flavio": 101,
-  "lula_pct": 0.5568,
-  "flavio_pct": 0.3826,
-  "validos": 264,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 270
- },
- {
-  "pais": "Noruega",
-  "lula": 592,
-  "flavio": 198,
-  "lula_pct": 0.6697,
-  "flavio_pct": 0.224,
-  "validos": 884,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 909
- },
- {
-  "pais": "Sérvia",
-  "lula": 30,
-  "flavio": 13,
-  "lula_pct": 0.625,
-  "flavio_pct": 0.2708,
-  "validos": 48,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 48
- },
- {
-  "pais": "Eslováquia",
-  "lula": 35,
-  "flavio": 13,
-  "lula_pct": 0.6034,
-  "flavio_pct": 0.2241,
-  "validos": 58,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 61
- },
- {
-  "pais": "Suécia",
-  "lula": 1770,
-  "flavio": 505,
-  "lula_pct": 0.6969,
-  "flavio_pct": 0.1988,
-  "validos": 2540,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 2607
- },
- {
-  "pais": "França",
-  "lula": 8769,
-  "flavio": 1758,
-  "lula_pct": 0.7823,
-  "flavio_pct": 0.1568,
-  "validos": 11209,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 11415
- },
- {
-  "pais": "Espanha",
-  "lula": 7263,
-  "flavio": 3338,
-  "lula_pct": 0.6263,
-  "flavio_pct": 0.2878,
-  "validos": 11597,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 12018
- },
- {
-  "pais": "Suíça",
-  "lula": 5194,
-  "flavio": 4525,
-  "lula_pct": 0.4786,
-  "flavio_pct": 0.4169,
-  "validos": 10853,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 11238
- },
- {
-  "pais": "Bélgica",
-  "lula": 2516,
-  "flavio": 1959,
-  "lula_pct": 0.5057,
-  "flavio_pct": 0.3938,
-  "validos": 4975,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 5091
- },
- {
-  "pais": "Países Baixos",
-  "lula": 4624,
-  "flavio": 1081,
-  "lula_pct": 0.737,
-  "flavio_pct": 0.1723,
-  "validos": 6274,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 6450
- },
- {
-  "pais": "Hungria",
-  "lula": 331,
-  "flavio": 93,
-  "lula_pct": 0.7134,
-  "flavio_pct": 0.2004,
-  "validos": 464,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 471
- },
- {
-  "pais": "Irlanda",
-  "lula": 6025,
-  "flavio": 1559,
-  "lula_pct": 0.726,
-  "flavio_pct": 0.1879,
-  "validos": 8299,
-  "fonte": "Jornal Razão, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados",
-  "comparecimento": 8417
- },
- {
-  "pais": "Marrocos",
-  "lula": 30,
-  "flavio": 6,
-  "lula_pct": 0.7143,
-  "flavio_pct": 0.1429,
-  "validos": 42,
-  "fonte": "Jornal Razão, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados",
-  "comparecimento": 47
- },
- {
-  "pais": "Senegal",
-  "lula": 51,
-  "flavio": 24,
-  "lula_pct": 0.6456,
-  "flavio_pct": 0.3038,
-  "validos": 79,
-  "fonte": "Jornal Razão, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados",
-  "comparecimento": 80
- },
- {
-  "pais": "Romênia",
-  "lula": 31,
-  "flavio": 22,
-  "lula_pct": 0.5,
-  "flavio_pct": 0.3548,
-  "validos": 62,
-  "fonte": "Jornal Razão, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados",
-  "comparecimento": 62
- },
- {
-  "pais": "Alemanha",
-  "lula": 13525,
-  "flavio": 3532,
-  "lula_pct": 0.7193,
-  "flavio_pct": 0.1879,
-  "validos": 18802,
-  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
-  "comparecimento": 19246
- },
- {
-  "pais": "Portugal",
-  "lula": 26401,
-  "flavio": 19412,
-  "lula_pct": 0.5245,
-  "flavio_pct": 0.3857,
-  "validos": 50332,
-  "fonte": "CNN Brasil e Poder360, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados"
- },
- {
-  "pais": "Reino Unido",
-  "lula": 8640,
-  "flavio": 5366,
-  "lula_pct": 0.5702,
-  "flavio_pct": 0.3541,
-  "validos": 15153,
-  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados"
- },
- {
-  "pais": "Itália",
-  "lula": 6148,
-  "flavio": 4386,
-  "lula_pct": 0.53,
-  "flavio_pct": 0.3781,
-  "validos": 11600,
-  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados"
- }
+  {
+    "pais": "Nova Zelândia",
+    "lula": 234,
+    "flavio": 64,
+    "lula_pct": 0.7048,
+    "flavio_pct": 0.1928,
+    "validos": 332,
+    "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 339
+  },
+  {
+    "pais": "Coreia do Sul",
+    "lula": 123,
+    "flavio": 72,
+    "lula_pct": 0.5694,
+    "flavio_pct": 0.3333,
+    "validos": 216,
+    "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+  },
+  {
+    "pais": "Japão",
+    "lula": 5234,
+    "flavio": 24601,
+    "lula_pct": 0.1525,
+    "flavio_pct": 0.7169,
+    "validos": 34318,
+    "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10); total de válidos: Portal Mie",
+    "comparecimento": 36627
+  },
+  {
+    "pais": "Austrália",
+    "lula": 4562,
+    "flavio": 2579,
+    "lula_pct": 0.5398,
+    "flavio_pct": 0.3052,
+    "validos": 8451,
+    "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+  },
+  {
+    "pais": "China",
+    "lula": 367,
+    "flavio": 203,
+    "lula_pct": 0.5629,
+    "flavio_pct": 0.3113,
+    "validos": 652,
+    "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+  },
+  {
+    "pais": "Singapura",
+    "lula": 190,
+    "flavio": 92,
+    "lula_pct": 0.546,
+    "flavio_pct": 0.2644,
+    "validos": 348,
+    "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+  },
+  {
+    "pais": "Malásia",
+    "lula": 44,
+    "flavio": 27,
+    "lula_pct": 0.5366,
+    "flavio_pct": 0.3293,
+    "validos": 82,
+    "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+  },
+  {
+    "pais": "Filipinas",
+    "lula": 26,
+    "flavio": 33,
+    "lula_pct": 0.4194,
+    "flavio_pct": 0.5323,
+    "validos": 62,
+    "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+  },
+  {
+    "pais": "Tailândia",
+    "lula": 40,
+    "flavio": 51,
+    "lula_pct": 0.404,
+    "flavio_pct": 0.5152,
+    "validos": 99,
+    "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+  },
+  {
+    "pais": "Indonésia",
+    "lula": 8,
+    "flavio": 19,
+    "lula_pct": 0.2581,
+    "flavio_pct": 0.6129,
+    "validos": 31,
+    "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+  },
+  {
+    "pais": "Taiwan",
+    "lula": 77,
+    "flavio": 107,
+    "lula_pct": 0.3532,
+    "flavio_pct": 0.4908,
+    "validos": 218,
+    "fonte": "Resultado do 1º turno por candidato (TSE), enviado pelo autor da página"
+  },
+  {
+    "pais": "Índia",
+    "lula": 29,
+    "flavio": 27,
+    "lula_pct": 0.4754,
+    "flavio_pct": 0.4426,
+    "validos": 61,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10; Nova Délhi e Mumbai)",
+    "comparecimento": 61
+  },
+  {
+    "pais": "Emirados Árabes Unidos",
+    "lula": 512,
+    "flavio": 659,
+    "lula_pct": 0.3779,
+    "flavio_pct": 0.4863,
+    "validos": 1355,
+    "fonte": "A Tarde e Jornal Razão, com dados do TSE (1º turno, 4/10; válidos = comparecimento 1.396 − brancos 13 − nulos 28)",
+    "comparecimento": 1396
+  },
+  {
+    "pais": "Jordânia",
+    "lula": 675,
+    "flavio": 59,
+    "lula_pct": 0.8621,
+    "flavio_pct": 0.0754,
+    "validos": 783,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 833
+  },
+  {
+    "pais": "Síria",
+    "lula": 97,
+    "flavio": 7,
+    "lula_pct": 0.8981,
+    "flavio_pct": 0.0648,
+    "validos": 108,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 118
+  },
+  {
+    "pais": "Kuwait",
+    "lula": 54,
+    "flavio": 12,
+    "lula_pct": 0.7397,
+    "flavio_pct": 0.1644,
+    "validos": 73,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 77
+  },
+  {
+    "pais": "Arábia Saudita",
+    "lula": 52,
+    "flavio": 22,
+    "lula_pct": 0.6265,
+    "flavio_pct": 0.2651,
+    "validos": 83,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 84
+  },
+  {
+    "pais": "Catar",
+    "lula": 147,
+    "flavio": 173,
+    "lula_pct": 0.4118,
+    "flavio_pct": 0.4846,
+    "validos": 357,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 364
+  },
+  {
+    "pais": "Finlândia",
+    "lula": 475,
+    "flavio": 155,
+    "lula_pct": 0.6854,
+    "flavio_pct": 0.2237,
+    "validos": 693,
+    "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados); comparecimento do Jornal Razão",
+    "comparecimento": 718
+  },
+  {
+    "pais": "Estônia",
+    "lula": 142,
+    "flavio": 19,
+    "lula_pct": 0.7474,
+    "flavio_pct": 0.1,
+    "validos": 190,
+    "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados); comparecimento do Jornal Razão",
+    "comparecimento": 197
+  },
+  {
+    "pais": "Quênia",
+    "lula": 26,
+    "flavio": 17,
+    "lula_pct": 0.5652,
+    "flavio_pct": 0.3696,
+    "validos": 46,
+    "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados)"
+  },
+  {
+    "pais": "Egito",
+    "lula": 46,
+    "flavio": 12,
+    "lula_pct": 0.7188,
+    "flavio_pct": 0.1875,
+    "validos": 64,
+    "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados)"
+  },
+  {
+    "pais": "África do Sul",
+    "lula": 152,
+    "flavio": 230,
+    "lula_pct": 0.3628,
+    "flavio_pct": 0.5489,
+    "validos": 419,
+    "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados)"
+  },
+  {
+    "pais": "Grécia",
+    "lula": 196,
+    "flavio": 230,
+    "lula_pct": 0.3968,
+    "flavio_pct": 0.4656,
+    "validos": 494,
+    "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados); comparecimento do Jornal Razão",
+    "comparecimento": 508
+  },
+  {
+    "pais": "Chipre",
+    "lula": 24,
+    "flavio": 20,
+    "lula_pct": 0.4138,
+    "flavio_pct": 0.3448,
+    "validos": 58,
+    "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados)"
+  },
+  {
+    "pais": "Israel",
+    "lula": 92,
+    "flavio": 523,
+    "lula_pct": 0.1307,
+    "flavio_pct": 0.7429,
+    "validos": 704,
+    "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados); comparecimento do Jornal Razão",
+    "comparecimento": 730
+  },
+  {
+    "pais": "Moçambique",
+    "lula": 89,
+    "flavio": 113,
+    "lula_pct": 0.4159,
+    "flavio_pct": 0.528,
+    "validos": 214,
+    "fonte": "Jornal Razão e Tribuna de Jundiaí (1º turno, 4/10; válidos calculados pelos percentuais publicados)",
+    "comparecimento": 228
+  },
+  {
+    "pais": "Turquia",
+    "lula": 114,
+    "flavio": 37,
+    "lula_pct": 0.6951,
+    "flavio_pct": 0.2256,
+    "validos": 164,
+    "fonte": "Boatos.org e Tribuna de Jundiaí (1º turno, 4/10, total do país; válidos calculados pelos percentuais publicados)"
+  },
+  {
+    "pais": "Líbano",
+    "lula": 2538,
+    "flavio": 1138,
+    "lula_pct": 0.6536,
+    "flavio_pct": 0.2931,
+    "validos": 3883,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 4097
+  },
+  {
+    "pais": "Palestina",
+    "lula": 1078,
+    "flavio": 46,
+    "lula_pct": 0.9317,
+    "flavio_pct": 0.0398,
+    "validos": 1157,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 1202
+  },
+  {
+    "pais": "Dinamarca",
+    "lula": 1166,
+    "flavio": 195,
+    "lula_pct": 0.79,
+    "flavio_pct": 0.1321,
+    "validos": 1476,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 1522
+  },
+  {
+    "pais": "Áustria",
+    "lula": 979,
+    "flavio": 311,
+    "lula_pct": 0.6655,
+    "flavio_pct": 0.2114,
+    "validos": 1471,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 1522
+  },
+  {
+    "pais": "Polônia",
+    "lula": 183,
+    "flavio": 65,
+    "lula_pct": 0.6489,
+    "flavio_pct": 0.2305,
+    "validos": 282,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 291
+  },
+  {
+    "pais": "República Tcheca",
+    "lula": 279,
+    "flavio": 70,
+    "lula_pct": 0.7028,
+    "flavio_pct": 0.1763,
+    "validos": 397,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 411
+  },
+  {
+    "pais": "Eslovênia",
+    "lula": 61,
+    "flavio": 25,
+    "lula_pct": 0.6224,
+    "flavio_pct": 0.2551,
+    "validos": 98,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 103
+  },
+  {
+    "pais": "Croácia",
+    "lula": 29,
+    "flavio": 17,
+    "lula_pct": 0.6042,
+    "flavio_pct": 0.3542,
+    "validos": 48,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 52
+  },
+  {
+    "pais": "Angola",
+    "lula": 147,
+    "flavio": 101,
+    "lula_pct": 0.5568,
+    "flavio_pct": 0.3826,
+    "validos": 264,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 270
+  },
+  {
+    "pais": "Noruega",
+    "lula": 592,
+    "flavio": 198,
+    "lula_pct": 0.6697,
+    "flavio_pct": 0.224,
+    "validos": 884,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 909
+  },
+  {
+    "pais": "Sérvia",
+    "lula": 30,
+    "flavio": 13,
+    "lula_pct": 0.625,
+    "flavio_pct": 0.2708,
+    "validos": 48,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 48
+  },
+  {
+    "pais": "Eslováquia",
+    "lula": 35,
+    "flavio": 13,
+    "lula_pct": 0.6034,
+    "flavio_pct": 0.2241,
+    "validos": 58,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 61
+  },
+  {
+    "pais": "Suécia",
+    "lula": 1770,
+    "flavio": 505,
+    "lula_pct": 0.6969,
+    "flavio_pct": 0.1988,
+    "validos": 2540,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 2607
+  },
+  {
+    "pais": "França",
+    "lula": 8769,
+    "flavio": 1758,
+    "lula_pct": 0.7823,
+    "flavio_pct": 0.1568,
+    "validos": 11209,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 11415
+  },
+  {
+    "pais": "Espanha",
+    "lula": 7263,
+    "flavio": 3338,
+    "lula_pct": 0.6263,
+    "flavio_pct": 0.2878,
+    "validos": 11597,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 12018
+  },
+  {
+    "pais": "Suíça",
+    "lula": 5194,
+    "flavio": 4525,
+    "lula_pct": 0.4786,
+    "flavio_pct": 0.4169,
+    "validos": 10853,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 11238
+  },
+  {
+    "pais": "Bélgica",
+    "lula": 2516,
+    "flavio": 1959,
+    "lula_pct": 0.5057,
+    "flavio_pct": 0.3938,
+    "validos": 4975,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 5091
+  },
+  {
+    "pais": "Países Baixos",
+    "lula": 4624,
+    "flavio": 1081,
+    "lula_pct": 0.737,
+    "flavio_pct": 0.1723,
+    "validos": 6274,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 6450
+  },
+  {
+    "pais": "Hungria",
+    "lula": 331,
+    "flavio": 93,
+    "lula_pct": 0.7134,
+    "flavio_pct": 0.2004,
+    "validos": 464,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 471
+  },
+  {
+    "pais": "Irlanda",
+    "lula": 6025,
+    "flavio": 1559,
+    "lula_pct": 0.726,
+    "flavio_pct": 0.1879,
+    "validos": 8299,
+    "fonte": "Jornal Razão, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados",
+    "comparecimento": 8417
+  },
+  {
+    "pais": "Marrocos",
+    "lula": 30,
+    "flavio": 6,
+    "lula_pct": 0.7143,
+    "flavio_pct": 0.1429,
+    "validos": 42,
+    "fonte": "Jornal Razão, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados",
+    "comparecimento": 47
+  },
+  {
+    "pais": "Senegal",
+    "lula": 51,
+    "flavio": 24,
+    "lula_pct": 0.6456,
+    "flavio_pct": 0.3038,
+    "validos": 79,
+    "fonte": "Jornal Razão, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados",
+    "comparecimento": 80
+  },
+  {
+    "pais": "Romênia",
+    "lula": 31,
+    "flavio": 22,
+    "lula_pct": 0.5,
+    "flavio_pct": 0.3548,
+    "validos": 62,
+    "fonte": "Jornal Razão, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados",
+    "comparecimento": 62
+  },
+  {
+    "pais": "Alemanha",
+    "lula": 13525,
+    "flavio": 3532,
+    "lula_pct": 0.7193,
+    "flavio_pct": 0.1879,
+    "validos": 18802,
+    "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+    "comparecimento": 19246
+  },
+  {
+    "pais": "Portugal",
+    "lula": 26401,
+    "flavio": 19412,
+    "lula_pct": 0.5245,
+    "flavio_pct": 0.3857,
+    "validos": 50332,
+    "fonte": "CNN Brasil e Poder360, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados"
+  },
+  {
+    "pais": "Reino Unido",
+    "lula": 8640,
+    "flavio": 5366,
+    "lula_pct": 0.5702,
+    "flavio_pct": 0.3541,
+    "validos": 15153,
+    "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados"
+  },
+  {
+    "pais": "Itália",
+    "lula": 6148,
+    "flavio": 4386,
+    "lula_pct": 0.53,
+    "flavio_pct": 0.3781,
+    "validos": 11600,
+    "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados"
+  },
+  {
+    "pais": "Cabo Verde",
+    "lula": 39,
+    "flavio": 20,
+    "lula_pct": 0.5571,
+    "flavio_pct": 0.2857,
+    "validos": 70,
+    "comparecimento": 74,
+    "fonte": "InfoMoney e Jornal Razão, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados"
+  }
 ]
