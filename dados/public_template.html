@@ -59,6 +59,13 @@
   .score-bar .l { background: var(--lula); border-radius: 999px 0 0 999px; } .score-bar .f { background: var(--flavio); border-radius: 0 999px 999px 0; }
   .score-bar .l:hover, .score-bar .f:hover, .score-bar .on { height: 22px; }
   .score-bar .mid { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: var(--panel); }
+  .score-ref { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr; gap: 3px; margin-top: -4px; }
+  .score-ref-bar { position: relative; display: flex; align-items: center; height: 6px; border-radius: 999px; background: var(--line); opacity: 0.45; }
+  .score-ref-bar > div { height: 100%; }
+  .score-ref-bar .l { background: var(--lula); border-radius: 999px 0 0 999px; } .score-ref-bar .o { background: var(--outros); } .score-ref-bar .f { background: var(--flavio); border-radius: 0 999px 999px 0; }
+  .score-ref-bar .l:hover, .score-ref-bar .o:hover, .score-ref-bar .f:hover, .score-ref-bar .on { height: 14px; }
+  .score-ref-bar .mid { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: var(--panel); }
+  .score-ref-label { font-size: 0.75rem; color: var(--muted); margin: 0; font-variant-numeric: tabular-nums; }
   .score-src { grid-column: 1 / -1; font-size: 0.78rem; color: var(--muted); margin: 0; }
 
   .wrap { padding-block: 30px 48px; }
@@ -212,6 +219,7 @@
         <span class="cand-votes" id="score-fv"></span>
       </div>
       <div class="score-bar"><div class="l" id="bar-l"></div><div class="f" id="bar-f"></div><div class="mid"></div></div>
+      <div class="score-ref" id="score-ref" hidden><div class="score-ref-bar"><div class="l" id="ref-l"></div><div class="o" id="ref-o"></div><div class="f" id="ref-f"></div><div class="mid"></div></div><p class="score-ref-label" id="ref-label"></p></div>
       <p class="score-src" id="score-source"></p>
     </div>
   </div>
@@ -339,6 +347,18 @@
     $('score-chip').textContent = 'Parcial · não oficial';
     $('score-source').textContent = `Soma dos boletins de urna de ${nf.format(ext.length)} ${ext.length === 1 ? 'país' : 'países'} do exterior onde a votação já terminou. Não indica o resultado no Brasil; a totalização oficial do TSE começa às 17h de Brasília.`;
     setScore(T ? L / T : null, T ? F / T : null, T ? L : null, T ? F : null);
+    // Barra de referência: 1º turno nos mesmos países (só os que têm o total de válidos do 1º turno)
+    const r1s = ext.map((r2) => D.primeiro.find((r) => r.pais === r2.pais && r.validos != null)).filter(Boolean);
+    const V1 = r1s.reduce((s, r) => s + r.validos, 0);
+    if (V1 > 0) {
+      const L1 = r1s.reduce((s, r) => s + r.lula, 0), F1 = r1s.reduce((s, r) => s + r.flavio, 0), O1 = V1 - L1 - F1;
+      [['ref-l', L1, 'Lula'], ['ref-o', O1, 'Outros candidatos'], ['ref-f', F1, 'Flávio Bolsonaro']].forEach(([id, v, nome]) => {
+        $(id).style.flex = `${Math.max(v, 0)} 1 0`; $(id).dataset.tip = `${nome} · 1º turno|${votos(v)} · ${pf.format(v / V1)}`;
+      });
+      const mesmos = r1s.length === ext.length ? `nos mesmos ${nf.format(r1s.length)} países` : `em ${nf.format(r1s.length)} destes ${nf.format(ext.length)} países`;
+      $('ref-label').textContent = `1º turno ${mesmos}: Lula ${pf.format(L1 / V1)} · outros ${pf.format(O1 / V1)} · Flávio ${pf.format(F1 / V1)}`;
+      $('score-ref').hidden = false;
+    }
   }
   $('stamp').textContent = 'Atualizado às ' + hBsb.format(new Date(D.gerado)) + ' (Brasília)';
 
