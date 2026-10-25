@@ -168,5 +168,102 @@
   "fonte": "Jornal Razão e Exame (boletins de urna do TSE); brancos 4, nulos 5",
   "visto_em": "2026-10-25T11:54:00-03:00",
   "comparecimento": 363
+ },
+ {
+  "pais": "Grécia",
+  "lula": 255,
+  "flavio": 311,
+  "lula_pct": 0.4505,
+  "flavio_pct": 0.5495,
+  "fonte": "CNN Brasil, Jornal Razão e O Povo (boletins de urna do TSE); brancos 13, nulos 2",
+  "visto_em": "2026-10-25T12:49:00-03:00",
+  "comparecimento": 581
+ },
+ {
+  "pais": "Chipre",
+  "lula": 29,
+  "flavio": 25,
+  "lula_pct": 0.537,
+  "flavio_pct": 0.463,
+  "fonte": "CNN Brasil e O Povo (boletins de urna do TSE)",
+  "visto_em": "2026-10-25T12:49:00-03:00"
+ },
+ {
+  "pais": "Finlândia",
+  "lula": 550,
+  "flavio": 185,
+  "lula_pct": 0.7483,
+  "flavio_pct": 0.2517,
+  "fonte": "CNN Brasil e Jornal Razão (boletins de urna do TSE); brancos 13, nulos 8",
+  "visto_em": "2026-10-25T12:49:00-03:00",
+  "comparecimento": 756
+ },
+ {
+  "pais": "Estônia",
+  "lula": 160,
+  "flavio": 33,
+  "lula_pct": 0.829,
+  "flavio_pct": 0.171,
+  "fonte": "CNN Brasil e Jornal Razão (boletins de urna do TSE); brancos 1, nulos 7",
+  "visto_em": "2026-10-25T12:49:00-03:00",
+  "comparecimento": 201
+ },
+ {
+  "pais": "África do Sul",
+  "lula": 186,
+  "flavio": 256,
+  "lula_pct": 0.4208,
+  "flavio_pct": 0.5792,
+  "fonte": "CNN Brasil e Jornal Razão (boletins de urna do TSE; Pretória e Cidade do Cabo); brancos 7, nulos 11",
+  "visto_em": "2026-10-25T12:49:00-03:00",
+  "comparecimento": 460
+ },
+ {
+  "pais": "Moçambique",
+  "lula": 108,
+  "flavio": 117,
+  "lula_pct": 0.48,
+  "flavio_pct": 0.52,
+  "fonte": "CNN Brasil e Jornal Razão (boletins de urna do TSE); brancos 1, nulos 7",
+  "visto_em": "2026-10-25T12:49:00-03:00",
+  "comparecimento": 233
+ },
+ {
+  "pais": "Egito",
+  "lula": 60,
+  "flavio": 16,
+  "lula_pct": 0.7895,
+  "flavio_pct": 0.2105,
+  "fonte": "CNN Brasil, Metrópoles e Congresso em Foco (boletins de urna do TSE)",
+  "visto_em": "2026-10-25T12:49:00-03:00"
+ },
+ {
+  "pais": "Quênia",
+  "lula": 29,
+  "flavio": 16,
+  "lula_pct": 0.6444,
+  "flavio_pct": 0.3556,
+  "fonte": "CNN Brasil, Metrópoles e Congresso em Foco (boletins de urna do TSE)",
+  "visto_em": "2026-10-25T12:49:00-03:00"
+ },
+ {
+  "pais": "Turquia",
+  "lula": 98,
+  "flavio": 29,
+  "lula_pct": 0.7717,
+  "flavio_pct": 0.2283,
+  "fonte": "Jornal Razão e Congresso em Foco (boletins de urna do TSE; parcial: 1 de 2 urnas); brancos 0, nulos 0",
+  "visto_em": "2026-10-25T12:49:00-03:00",
+  "comparecimento": 127
+ },
+ {
+  "pais": "Israel",
+  "lula": 166,
+  "flavio": 699,
+  "lula_pct": 0.1919,
+  "flavio_pct": 0.8081,
+  "fonte": "Jornal Razão (5 boletins de urna do TSE); brancos 18, nulos 19",
+  "visto_em": "2026-10-25T12:49:00-03:00",
+  "comparecimento": 902
  }
 ]

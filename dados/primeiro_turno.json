@@ -169,5 +169,100 @@
   "validos": 357,
   "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
   "comparecimento": 364
+ },
+ {
+  "pais": "Finlândia",
+  "lula": 475,
+  "flavio": 155,
+  "lula_pct": 0.6854,
+  "flavio_pct": 0.2237,
+  "validos": 693,
+  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados); comparecimento do Jornal Razão",
+  "comparecimento": 718
+ },
+ {
+  "pais": "Estônia",
+  "lula": 142,
+  "flavio": 19,
+  "lula_pct": 0.7474,
+  "flavio_pct": 0.1,
+  "validos": 190,
+  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados); comparecimento do Jornal Razão",
+  "comparecimento": 197
+ },
+ {
+  "pais": "Quênia",
+  "lula": 26,
+  "flavio": 17,
+  "lula_pct": 0.5652,
+  "flavio_pct": 0.3696,
+  "validos": 46,
+  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados)"
+ },
+ {
+  "pais": "Egito",
+  "lula": 46,
+  "flavio": 12,
+  "lula_pct": 0.7188,
+  "flavio_pct": 0.1875,
+  "validos": 64,
+  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados)"
+ },
+ {
+  "pais": "África do Sul",
+  "lula": 152,
+  "flavio": 230,
+  "lula_pct": 0.3628,
+  "flavio_pct": 0.5489,
+  "validos": 419,
+  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados)"
+ },
+ {
+  "pais": "Grécia",
+  "lula": 196,
+  "flavio": 230,
+  "lula_pct": 0.3968,
+  "flavio_pct": 0.4656,
+  "validos": 494,
+  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados); comparecimento do Jornal Razão",
+  "comparecimento": 508
+ },
+ {
+  "pais": "Chipre",
+  "lula": 24,
+  "flavio": 20,
+  "lula_pct": 0.4138,
+  "flavio_pct": 0.3448,
+  "validos": 58,
+  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados)"
+ },
+ {
+  "pais": "Israel",
+  "lula": 92,
+  "flavio": 523,
+  "lula_pct": 0.1307,
+  "flavio_pct": 0.7429,
+  "validos": 704,
+  "fonte": "InfoMoney (1º turno, 4/10; válidos calculados pelos percentuais publicados); comparecimento do Jornal Razão",
+  "comparecimento": 730
+ },
+ {
+  "pais": "Moçambique",
+  "lula": 89,
+  "flavio": 113,
+  "lula_pct": 0.4159,
+  "flavio_pct": 0.528,
+  "validos": 214,
+  "fonte": "Jornal Razão e Tribuna de Jundiaí (1º turno, 4/10; válidos calculados pelos percentuais publicados)",
+  "comparecimento": 228
+ },
+ {
+  "pais": "Turquia",
+  "lula": 114,
+  "flavio": 37,
+  "lula_pct": 0.6951,
+  "flavio_pct": 0.2256,
+  "validos": 164,
+  "fonte": "Boatos.org e Tribuna de Jundiaí (1º turno, 4/10, total do país; válidos calculados pelos percentuais publicados)"
  }
 ]
