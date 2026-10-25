@@ -1,0 +1,524 @@
+<title>Apuração do 2º turno 2026</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
+<style>
+  /* Layout: boletim sóbrio em fundo claro — cabeçalho com status e placar compacto; em destaque a comparação 1º × 2º turno; depois exterior por continente e totalização do TSE. */
+  :root {
+    --bg: #f5f6f8;
+    --panel: #ffffff;
+    --fg: #141821;
+    --muted: #586070;
+    --line: #d9dde4;
+    --rule: #141821;
+    --outros: #c3c8d1;
+    --soft: #eef0f4;
+    --lula: #c8102e;
+    --flavio: #0b3d91;
+    --on-mark: #ffffff;
+    --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --font-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101319; --panel: #191d25; --fg: #eceef2; --muted: #9aa1ad; --line: #2a303a; --rule: #eceef2; --outros: #4a515d; --soft: #20252e;
+      --lula: #d8263f; --flavio: #2f66c9; --on-mark: #ffffff; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101319; --panel: #191d25; --fg: #eceef2; --muted: #9aa1ad; --line: #2a303a; --rule: #eceef2; --outros: #4a515d; --soft: #20252e;
+    --lula: #d8263f; --flavio: #2f66c9; --on-mark: #ffffff; color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.5; }
+  .gutter { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .inner { max-width: 62rem; margin-inline: auto; }
+
+  /* Cabeçalho */
+  .top { border-top: 4px solid var(--rule); background: var(--panel); border-bottom: 1px solid var(--line); padding-block: 22px 24px; }
+  .top .inner { display: flex; flex-direction: column; gap: 18px; }
+  .top-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .top-row > div { min-width: 0; }
+  .flag { flex: none; width: clamp(64px, 14vw, 116px); height: auto; border-radius: 4px; box-shadow: 0 0 0 1px var(--line); display: block; }
+  .kicker { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin: 0 0 6px; }
+  h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.9rem, 5vw, 2.6rem); line-height: 1.1; margin: 0; text-wrap: balance; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 0.82rem; color: var(--muted); margin: 8px 0 0; font-variant-numeric: tabular-nums; }
+  .scope { margin: 8px 0 0; font-size: 0.82rem; color: var(--muted); max-width: 60ch; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700; padding: 2px 9px; border-radius: 4px; border: 1px solid var(--line); background: var(--soft); color: var(--fg); }
+  .chip.oficial { border-color: var(--fg); }
+  .score { display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px 16px; align-items: center; padding: 14px 16px; background: var(--soft); border-radius: 8px; }
+  .cand { display: flex; flex-direction: column; min-width: 0; }
+  .cand.right { text-align: right; align-items: flex-end; }
+  .cand-name { font-size: 0.85rem; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+  .cand-pct { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.8rem, 6vw, 2.4rem); line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .cand.left .cand-pct { color: var(--lula); } .cand.right .cand-pct { color: var(--flavio); }
+  .cand-votes { font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .score-mid { font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-align: center; font-weight: 600; }
+  .score-bar { grid-column: 1 / -1; position: relative; display: flex; align-items: center; height: 12px; border-radius: 999px; background: var(--line); }
+  .score-bar .l, .score-bar .f { height: 100%; }
+  .score-bar .l { background: var(--lula); border-radius: 999px 0 0 999px; } .score-bar .f { background: var(--flavio); border-radius: 0 999px 999px 0; }
+  .score-bar .l:hover, .score-bar .f:hover, .score-bar .on { height: 22px; }
+  .score-bar .mid { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: var(--panel); }
+  .score-src { grid-column: 1 / -1; font-size: 0.78rem; color: var(--muted); margin: 0; }
+
+  .wrap { padding-block: 30px 48px; }
+  .wrap .inner { display: flex; flex-direction: column; gap: 44px; }
+  section { display: flex; flex-direction: column; gap: 14px; }
+  .sec-label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin: 0 0 -8px; }
+  h2 { font-family: var(--font-display); font-weight: 700; font-size: 1.55rem; line-height: 1.2; margin: 0; text-wrap: balance; }
+  .note { margin: -4px 0 0; color: var(--muted); font-size: 0.875rem; max-width: 70ch; }
+  .src { margin: 0; color: var(--muted); font-size: 0.78rem; }
+  .dot { width: 0.65rem; height: 0.65rem; border-radius: 2px; display: inline-block; flex: none; }
+  .dot.lula { background: var(--lula); } .dot.flavio { background: var(--flavio); } .dot.outros { background: var(--outros); }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; min-width: 0; }
+  .card h3 { margin: 0; font-size: 1rem; font-weight: 600; }
+  .card-note { margin: 2px 0 14px; font-size: 0.8rem; color: var(--muted); }
+  .legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.8rem; color: var(--muted); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+
+  /* Destaque: comparação */
+  .hero { border: 1px solid var(--line); border-top: 3px solid var(--rule); border-radius: 8px; background: var(--panel); padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+  .hero-head { font-family: var(--font-display); font-size: clamp(1.25rem, 3.4vw, 1.6rem); line-height: 1.3; margin: 0; text-wrap: balance; max-width: 40ch; }
+  .hero-head b { font-weight: 700; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr)); gap: 10px; }
+  .fact { border-left: 1px solid var(--line); padding: 2px 0 2px 12px; }
+  .fact-v { font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; line-height: 1.15; font-variant-numeric: tabular-nums; }
+  .fact-v.lula { color: var(--lula); } .fact-v.flavio { color: var(--flavio); }
+  .fact-l { font-size: 0.78rem; color: var(--muted); }
+  .fact.small .fact-v { font-size: 1.15rem; color: var(--muted); padding-top: 0.35rem; }
+  .hero-sub { margin: 0; font-size: 0.85rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .comp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 12px; }
+  .country { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; min-width: 0; }
+  .country h4 { margin: 0; font-size: 1rem; font-weight: 600; }
+  .country p { margin: 2px 0 8px; font-size: 0.9rem; }
+  .country .delta { font-size: 0.78rem; color: var(--muted); margin-top: 8px; font-variant-numeric: tabular-nums; }
+
+/* Continentes */
+  .regions { display: flex; flex-direction: column; gap: 22px; }
+  .region-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--line); padding-bottom: 6px; margin-bottom: 12px; flex-wrap: wrap; }
+  .region-head h3 { margin: 0; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: var(--fg); }
+  .region-count { font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .region-empty { font-size: 0.85rem; color: var(--muted); margin: 0; }
+  .tiles-c { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 10.5rem), 1fr)); gap: 10px; }
+  .ctile { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 12px 10px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .ctile-top { display: flex; align-items: center; gap: 8px; min-width: 0; }
+  .ctile-name { font-weight: 600; font-size: 0.92rem; overflow-wrap: anywhere; }
+  .ctile-lead { font-size: 0.82rem; font-variant-numeric: tabular-nums; color: var(--muted); }
+  .ctile-lead b { font-weight: 700; }
+  .ctile-lead b.lula { color: var(--lula); } .ctile-lead b.flavio { color: var(--flavio); }
+  .mini { display: flex; align-items: center; height: 6px; border-radius: 999px; background: var(--line); }
+  .mini .l, .mini .f { height: 100%; } .mini .l { background: var(--lula); border-radius: 999px 0 0 999px; } .mini .f { background: var(--flavio); border-radius: 0 999px 999px 0; }
+  .mini .l:hover, .mini .f:hover, .mini .on { height: 14px; }
+  .ctile-votes { font-size: 0.75rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  /* Comparação */
+  .stack { display: flex; align-items: center; height: 26px; border-radius: 6px; background: var(--line); }
+  .stack > .seg:first-child { border-radius: 6px 0 0 6px; } .stack > .seg:last-child { border-radius: 0 6px 6px 0; } .stack > .seg:only-child { border-radius: 6px; }
+  .seg:hover, .seg.on { height: calc(100% + 12px); border-radius: 4px; }
+  .seg { height: 100%; display: flex; align-items: center; justify-content: center; color: var(--on-mark); font-size: 0.75rem; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; min-width: 0; }
+  .seg.lula { background: var(--lula); } .seg.flavio { background: var(--flavio); } .seg.outros { background: var(--outros); color: var(--fg); }
+  .trow { display: grid; grid-template-columns: 4.5rem 1fr; gap: 10px; align-items: center; margin-top: 6px; }
+  .trow-label { font-size: 0.8rem; color: var(--muted); }
+  .trow.atual .trow-label { color: var(--fg); font-weight: 600; }
+  .trow.ref .stack { opacity: 0.4; height: 18px; }
+
+  /* Abstenção */
+  .abst { display: flex; flex-direction: column; gap: 14px; }
+  .abst-row { display: grid; grid-template-columns: minmax(6.5rem, 9rem) 1fr; gap: 6px 12px; align-items: center; }
+  .abst-name { font-weight: 600; font-size: 0.9rem; overflow-wrap: anywhere; }
+  .abst-name small { display: block; font-weight: 400; color: var(--muted); font-size: 0.75rem; font-variant-numeric: tabular-nums; }
+  .abst-bars { display: flex; flex-direction: column; gap: 4px; position: relative; min-width: 0; }
+  .abar { display: grid; grid-template-columns: 1fr 4.2rem; gap: 8px; align-items: center; }
+  .atrack { position: relative; height: 14px; background: var(--soft); border-radius: 3px; }
+  .afill { position: absolute; inset: 0 auto 0 0; background: var(--fg); border-radius: 3px; }
+  .abar.ref .afill { opacity: 0.3; }
+  .abar.ref .atrack { height: 9px; }
+  .aval { font-size: 0.8rem; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  .abar.ref .aval { color: var(--muted); }
+  .amark { position: absolute; top: -3px; bottom: -3px; width: 0; border-left: 2px dashed var(--muted); }
+  .abst-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 0.8rem; color: var(--muted); }
+  .abst-legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .sw { display: inline-block; width: 18px; height: 9px; border-radius: 2px; background: var(--fg); }
+  .sw.ref { opacity: 0.3; }
+  .sw.mark { width: 0; height: 12px; border-left: 2px dashed var(--muted); background: none; border-radius: 0; }
+  .chg { font-size: 0.75rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  /* TSE */
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: 12px; }
+  .tile { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+  .tile-label { font-size: 0.8rem; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+  .tile-value { font-family: var(--font-display); font-weight: 700; font-size: 2rem; line-height: 1.2; margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .tile-sub { font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; font-size: 0.9rem; }
+  th { text-align: left; font-weight: 500; font-size: 0.78rem; color: var(--muted); padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  td { padding: 7px 8px; border-bottom: 1px solid var(--line); }
+  .num { text-align: right; }
+  @media (max-width: 40rem) { .opt { display: none; } }
+  details summary { cursor: pointer; font-weight: 600; font-size: 0.95rem; }
+  details summary:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; border-radius: 4px; }
+  details[open] summary { margin-bottom: 10px; }
+  .empty { color: var(--muted); font-size: 0.875rem; padding: 28px 8px; text-align: center; }
+  .chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .chart text { fill: var(--muted); font-family: var(--font-body); font-size: 12px; }
+  .contact { border-top: 1px solid var(--line); padding-top: 16px; }
+  .contact p { margin: 0; font-size: 0.9rem; }
+  .contact a { color: var(--fg); font-weight: 600; text-underline-offset: 3px; }
+  .contact a:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; border-radius: 2px; }
+  [data-tip] { cursor: default; position: relative; }
+  [data-tip]:hover, [data-tip].on { z-index: 2; box-shadow: 0 0 0 2px var(--panel); }
+  @media (prefers-reduced-motion: no-preference) { [data-tip] { transition: height 0.15s ease-out, box-shadow 0.15s ease-out; } }
+  .tip { position: fixed; z-index: 20; pointer-events: none; background: var(--panel); color: var(--fg); border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14); padding: 6px 10px; font-size: 0.8rem; line-height: 1.35; font-variant-numeric: tabular-nums; max-width: 16rem; }
+  .tip b { display: block; font-weight: 600; }
+  .tip span { color: var(--muted); }
+  .foot { font-size: 0.8rem; color: var(--muted); max-width: 70ch; margin: 0; }
+</style>
+
+<header class="top gutter">
+  <div class="inner">
+    <div class="top-row">
+    <div>
+      <p class="kicker"><span>Eleição presidencial 2026</span><span>Domingo, 25 de outubro</span></p>
+      <h1>Apuração do 2º turno para presidente</h1>
+      <p class="meta"><span class="chip" id="score-chip"></span><span id="stamp"></span><span>Atualização a cada hora</span></p>
+      <p class="scope">Só a disputa para presidente, entre Lula e Flávio Bolsonaro. Os segundos turnos para governador e as eleições municipais suplementares de hoje não estão nesta página.</p>
+    </div>
+    <svg class="flag" viewBox="0 0 200 140" role="img" aria-label="Bandeira do Brasil">
+      <defs><clipPath id="globo"><circle cx="100" cy="70" r="35"></circle></clipPath></defs>
+      <rect width="200" height="140" fill="#009c3b"></rect>
+      <polygon points="17,70 100,12 183,70 100,128" fill="#ffdf00"></polygon>
+      <circle cx="100" cy="70" r="35" fill="#002776"></circle>
+      <path d="M58 64 Q100 52 142 80" fill="none" stroke="#ffffff" stroke-width="7" clip-path="url(#globo)"></path>
+      <g fill="#ffffff" clip-path="url(#globo)">
+        <circle cx="90" cy="88" r="1.6"></circle><circle cx="100" cy="94" r="1.6"></circle><circle cx="110" cy="86" r="1.6"></circle>
+        <circle cx="82" cy="80" r="1.3"></circle><circle cx="118" cy="95" r="1.3"></circle><circle cx="104" cy="80" r="1.3"></circle>
+        <circle cx="94" cy="100" r="1.3"></circle><circle cx="122" cy="84" r="1.1"></circle><circle cx="86" cy="94" r="1.1"></circle>
+        <circle cx="112" cy="56" r="1.4"></circle>
+      </g>
+    </svg>
+    </div>
+    <div class="score" id="score">
+      <div class="cand left">
+        <span class="cand-name"><span class="dot lula"></span>Lula (PT)</span>
+        <span class="cand-pct" id="score-l">—</span>
+        <span class="cand-votes" id="score-lv"></span>
+      </div>
+      <div class="score-mid">votos<br>válidos</div>
+      <div class="cand right">
+        <span class="cand-name">Flávio Bolsonaro (PL)<span class="dot flavio"></span></span>
+        <span class="cand-pct" id="score-f">—</span>
+        <span class="cand-votes" id="score-fv"></span>
+      </div>
+      <div class="score-bar"><div class="l" id="bar-l"></div><div class="f" id="bar-f"></div><div class="mid"></div></div>
+      <p class="score-src" id="score-source"></p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap gutter">
+  <div class="inner">
+    <section id="comparacao">
+      <p class="sec-label">Destaque</p>
+      <h2>O que mudou do 1º para o 2º turno no exterior</h2>
+      <div class="hero" id="hero"></div>
+      <div class="legend"><span><span class="dot lula"></span>Lula</span><span><span class="dot outros"></span>Outros candidatos (1º turno)</span><span>Barra mais clara: 1º turno, para comparação</span><span><span class="dot flavio"></span>Flávio</span></div>
+      <div class="comp-grid" id="comp"></div>
+      <p class="src">Cada barra mostra o número de votos válidos; uma barra mais longa no 2º turno quer dizer que mais gente votou. 1º turno: InfoMoney, com dados do TSE. 2º turno: boletins de urna publicados pela imprensa.</p>
+    </section>
+
+    <section id="abstencao">
+      <p class="sec-label">Participação</p>
+      <h2>Abstenção no exterior, 1º × 2º turno</h2>
+      <p class="hero-sub" id="abst-head"></p>
+      <div class="card">
+        <div class="abst-legend"><span><span class="sw"></span>2º turno</span><span><span class="sw ref"></span>1º turno</span><span><span class="sw mark"></span>Média do exterior no 1º turno (62,7%)</span></div>
+        <div class="abst" id="abst" style="margin-top: 14px;"></div>
+      </div>
+      <p class="src">Abstenção = eleitores aptos que não votaram. Eleitores aptos por país: O Tempo, com dados do TSE (China inclui Hong Kong). Média do exterior no 1º turno: TRE-DF. ≈ indica valor aproximado, calculado com os votos válidos porque a fonte não informou brancos e nulos; nesses casos a abstenção real é um pouco menor.</p>
+    </section>
+
+    <section id="exterior">
+      <p class="sec-label">Boletins de urna</p>
+      <h2>Exterior, continente por continente</h2>
+      <p class="note">Soma não oficial de boletins de urna de seções onde a votação já terminou, segundo levantamentos da imprensa. Cada quadro mostra quem ficou à frente no país e por quanto. O eleitorado no exterior vota de forma diferente do Brasil.</p>
+      <div class="legend"><span><span class="dot lula"></span>Lula à frente</span><span><span class="dot flavio"></span>Flávio à frente</span></div>
+      <div class="regions" id="regions"></div>
+      <details class="card">
+        <summary>Ver tabela com todos os países</summary>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>País</th><th class="num">Lula</th><th class="num">Flávio</th><th class="num">Lula %</th><th class="num">Flávio %</th><th class="opt">Visto às</th><th class="opt">Fonte</th></tr></thead>
+            <tbody id="ext-table"></tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+
+    <section id="tse">
+      <p class="sec-label">Resultado oficial</p>
+      <h2>Totalização do TSE</h2>
+      <p class="note">Dados do Portal Resultados do TSE, registrados a cada atualização desta página. Percentuais sobre os votos válidos (sem brancos e nulos).</p>
+      <div class="tiles">
+        <div class="tile"><div class="tile-label">Seções totalizadas</div><div class="tile-value" id="tse-secoes">—</div><div class="tile-sub">Brasil e exterior</div></div>
+        <div class="tile"><div class="tile-label"><span class="dot lula"></span>Lula (PT)</div><div class="tile-value" id="tse-lula">—</div><div class="tile-sub" id="tse-lula-v"></div></div>
+        <div class="tile"><div class="tile-label"><span class="dot flavio"></span>Flávio Bolsonaro (PL)</div><div class="tile-value" id="tse-flavio">—</div><div class="tile-sub" id="tse-flavio-v"></div></div>
+      </div>
+      <div class="card">
+        <h3>Evolução dos votos válidos</h3>
+        <p class="card-note">Cada ponto é uma atualização desta página. Horário de Brasília.</p>
+        <div class="chart" id="tse-chart"></div>
+      </div>
+    </section>
+
+    <div class="contact">
+      <p>Dúvidas, correções ou sugestões? Fale com quem fez este painel <a href="https://www.linkedin.com/in/caio-rocha-029b63136/" target="_blank" rel="noopener">no LinkedIn</a>.</p>
+    </div>
+    <p class="foot">Atualizada por Claude em intervalos, não em tempo real. Para o número oficial mais recente, consulte resultados.tse.jus.br ou o aplicativo Resultados do TSE. Fontes dos boletins: Poder360, g1, Brasil de Fato; 1º turno: InfoMoney com dados do TSE.</p>
+  </div>
+</main>
+
+<script type="application/json" id="dados">{"exterior": [{"pais": "Nova Zelândia", "lula": 418, "flavio": 101, "lula_pct": 0.8054, "flavio_pct": 0.1946, "fonte": "Poder360 e g1 (boletins de urna); confirmado pelo g1; confirmado pela CNN Brasil", "visto_em": "2026-10-25T05:40:00-03:00", "comparecimento": 526}, {"pais": "Coreia do Sul", "lula": 148, "flavio": 82, "lula_pct": 0.6435, "flavio_pct": 0.3565, "fonte": "g1, via BNews (boletins de urna); confirmado pelo g1; confirmado pela CNN Brasil", "visto_em": "2026-10-25T05:40:00-03:00"}, {"pais": "China", "lula": 502, "flavio": 267, "lula_pct": 0.6528, "flavio_pct": 0.3472, "fonte": "g1 e CNN Brasil (boletins de urna do TSE; inclui Hong Kong)", "visto_em": "2026-10-25T07:00:00-03:00"}, {"pais": "Filipinas", "lula": 27, "flavio": 39, "lula_pct": 0.4091, "flavio_pct": 0.5909, "fonte": "g1 (infográfico com boletins de urna); confirmado pela CNN Brasil", "visto_em": "2026-10-25T07:10:00-03:00"}, {"pais": "Malásia", "lula": 41, "flavio": 44, "lula_pct": 0.4824, "flavio_pct": 0.5176, "fonte": "g1 (infográfico com boletins de urna)", "visto_em": "2026-10-25T07:10:00-03:00"}, {"pais": "Singapura", "lula": 213, "flavio": 121, "lula_pct": 0.6377, "flavio_pct": 0.3623, "fonte": "g1 (infográfico com boletins de urna); confirmado pela CNN Brasil", "visto_em": "2026-10-25T07:10:00-03:00"}, {"pais": "Japão", "lula": 7098, "flavio": 28538, "lula_pct": 0.1992, "flavio_pct": 0.8008, "fonte": "Brasil 247 e CNN Brasil (boletins de urna do TSE)", "visto_em": "2026-10-25T06:59:00-03:00", "comparecimento": 37616}, {"pais": "Austrália", "lula": 6017, "flavio": 3465, "lula_pct": 0.6346, "flavio_pct": 0.3654, "fonte": "CNN Brasil (boletins de urna do TSE)", "visto_em": "2026-10-25T07:33:00-03:00"}, {"pais": "Taiwan", "lula": 94, "flavio": 130, "lula_pct": 0.4196, "flavio_pct": 0.5804, "fonte": "CNN Brasil (boletins de urna do TSE)", "visto_em": "2026-10-25T07:33:00-03:00"}], "tse": [], "primeiro": [{"pais": "Nova Zelândia", "lula": 234, "flavio": 64, "lula_pct": 0.7048, "flavio_pct": 0.1928, "validos": 332, "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)", "comparecimento": 339}, {"pais": "Coreia do Sul", "lula": 123, "flavio": 72, "lula_pct": 0.5694, "flavio_pct": 0.3333, "validos": 216, "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"}, {"pais": "Japão", "lula": 5234, "flavio": 24601, "lula_pct": 0.1525, "flavio_pct": 0.7169, "validos": 34318, "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10); total de válidos: Portal Mie", "comparecimento": 36627}, {"pais": "Austrália", "lula": 4562, "flavio": 2579, "lula_pct": 0.5398, "flavio_pct": 0.3052, "validos": 8451, "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"}, {"pais": "China", "lula": 367, "flavio": 203, "lula_pct": 0.5629, "flavio_pct": 0.3113, "validos": 652, "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"}, {"pais": "Singapura", "lula": 190, "flavio": 92, "lula_pct": 0.546, "flavio_pct": 0.2644, "validos": 348, "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"}, {"pais": "Malásia", "lula": 44, "flavio": 27, "lula_pct": 0.5366, "flavio_pct": 0.3293, "validos": 82, "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"}, {"pais": "Filipinas", "lula": 26, "flavio": 33, "lula_pct": 0.4194, "flavio_pct": 0.5323, "validos": 62, "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"}, {"pais": "Tailândia", "lula": 40, "flavio": 51, "lula_pct": 0.404, "flavio_pct": 0.5152, "validos": 99, "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"}, {"pais": "Indonésia", "lula": 8, "flavio": 19, "lula_pct": 0.2581, "flavio_pct": 0.6129, "validos": 31, "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"}], "aptos": {"Estados Unidos": 265022, "Portugal": 134374, "Japão": 88293, "Canadá": 46345, "Reino Unido": 41895, "Alemanha": 41401, "Espanha": 40718, "Itália": 38747, "França": 29617, "Suíça": 26982, "Austrália": 20274, "Irlanda": 16720, "Argentina": 13004, "Holanda": 12752, "Bélgica": 10073, "Paraguai": 9207, "Líbano": 8919, "Suécia": 4866, "México": 3958, "Bolívia": 3604, "Chile": 3551, "Israel": 3442, "Uruguai": 3163, "Áustria": 3134, "Guiana Francesa": 3127, "Nova Zelândia": 3118, "Emirados Árabes Unidos": 2988, "Dinamarca": 2856, "Noruega": 2185, "Territórios Palestinos": 2135, "Peru": 1633, "China": 2168, "Colômbia": 1499, "Jordânia": 1489, "Suriname": 1430, "Panamá": 1399, "Finlândia": 1278, "Grécia": 1211, "Venezuela": 1067, "África do Sul": 1012, "Equador": 993, "Singapura": 864, "Hungria": 810, "Síria": 775, "Catar": 758, "Polônia": 748, "Angola": 716, "Costa Rica": 714, "República Tcheca": 690, "Hong Kong": 668, "Taiwan": 622, "Moçambique": 557, "Coreia do Sul": 485, "República Dominicana": 415, "Turquia": 404, "Estônia": 320, "Arábia Saudita": 311, "Tailândia": 310, "Guatemala": 284, "Rússia": 252, "Filipinas": 229, "Egito": 203, "Índia": 196, "Guiana": 178, "Indonésia": 172, "Malásia": 170, "Eslovênia": 162, "El Salvador": 161, "Honduras": 152, "Cabo Verde": 146, "Kuwait": 138, "Chipre": 137, "Croácia": 136, "Nicarágua": 134, "Senegal": 132, "Romênia": 130, "Eslováquia": 129, "Marrocos": 117, "Sérvia": 115, "Quênia": 112, "Jamaica": 103, "Bulgária": 98, "Omã": 97, "Cuba": 92, "Costa do Marfim": 91, "Timor-Leste": 89, "Guiné-Bissau": 88, "Trinidad e Tobago": 87, "Nigéria": 85, "Vietnã": 82, "Bahamas": 69, "Barein": 69, "Ucrânia": 65, "Argélia": 48, "Tunísia": 47, "Irã": 45, "Gana": 43, "Namíbia": 37, "Tanzânia": 34, "Haiti": 33, "Nepal": 32, "Líbia": 30, "Emirados Árabes": 2988, "Palestina": 2135, "Bahrein": 69, "Países Baixos": 12752}, "media_abst_r1": 0.6269, "gerado": "2026-10-25T10:40+00:00"}</script>
+<script>
+(() => {
+  const D = JSON.parse(document.getElementById('dados').textContent);
+  const nf = new Intl.NumberFormat('pt-BR');
+  const pf = new Intl.NumberFormat('pt-BR', { style: 'percent', minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const p0 = new Intl.NumberFormat('pt-BR', { style: 'percent', maximumFractionDigits: 0 });
+  const hBsb = new Intl.DateTimeFormat('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
+  const $ = (id) => document.getElementById(id);
+  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; };
+  const votos = (n) => `${nf.format(n)} ${Math.abs(n) === 1 ? 'voto' : 'votos'}`;
+
+  const REGIOES = [
+    ['Ásia e Oceania', ['Nova Zelândia', 'Austrália', 'Japão', 'Coreia do Sul', 'China', 'Hong Kong', 'Taiwan', 'Singapura', 'Malásia', 'Filipinas', 'Tailândia', 'Indonésia', 'Índia', 'Vietnã', 'Timor-Leste', 'Nepal', 'Bangladesh', 'Paquistão', 'Sri Lanka', 'Mongólia', 'Cazaquistão']],
+    ['Oriente Médio e África', ['Israel', 'Palestina', 'Emirados Árabes Unidos', 'Emirados Árabes', 'Catar', 'Kuwait', 'Bahrein', 'Omã', 'Arábia Saudita', 'Jordânia', 'Líbano', 'Irã', 'Iraque', 'Egito', 'África do Sul', 'Angola', 'Moçambique', 'Nigéria', 'Gana', 'Quênia', 'Marrocos', 'Argélia', 'Tunísia', 'Cabo Verde', 'Guiné-Bissau', 'Guiné Equatorial', 'São Tomé e Príncipe', 'Senegal', 'Etiópia', 'Costa do Marfim', 'Camarões', 'Namíbia', 'Tanzânia', 'Zâmbia', 'Zimbábue', 'Benin', 'Togo', 'Congo', 'República Democrática do Congo', 'Gabão', 'Sudão', 'Botsuana']],
+    ['Europa', ['Portugal', 'Espanha', 'França', 'Itália', 'Alemanha', 'Reino Unido', 'Irlanda', 'Países Baixos', 'Holanda', 'Bélgica', 'Suíça', 'Áustria', 'Suécia', 'Noruega', 'Dinamarca', 'Finlândia', 'Polônia', 'Rússia', 'Grécia', 'Turquia', 'República Tcheca', 'Tchéquia', 'Hungria', 'Romênia', 'Bulgária', 'Croácia', 'Ucrânia', 'Luxemburgo', 'Islândia', 'Sérvia', 'Eslováquia', 'Eslovênia', 'Estônia', 'Letônia', 'Lituânia', 'Chipre', 'Malta', 'Andorra', 'Mônaco', 'Vaticano', 'Santa Sé', 'Belarus', 'Bielorrússia', 'Azerbaijão', 'Geórgia', 'Armênia', 'Albânia', 'Bósnia e Herzegovina', 'Macedônia do Norte', 'Montenegro']],
+    ['Américas', ['Estados Unidos', 'Canadá', 'México', 'Argentina', 'Paraguai', 'Uruguai', 'Chile', 'Bolívia', 'Peru', 'Colômbia', 'Venezuela', 'Equador', 'Guiana', 'Suriname', 'Guiana Francesa', 'Panamá', 'Costa Rica', 'Cuba', 'República Dominicana', 'Guatemala', 'Honduras', 'El Salvador', 'Nicarágua', 'Haiti', 'Jamaica', 'Trinidad e Tobago', 'Barbados', 'Bahamas', 'Belize']],
+  ];
+  const regiaoDe = (pais) => { const r = REGIOES.find(([, lista]) => lista.includes(pais)); return r ? r[0] : 'Outros'; };
+
+  const ext = D.exterior.slice().sort((a, b) => (b.lula + b.flavio) - (a.lula + a.flavio));
+  const L = ext.reduce((s, r) => s + r.lula, 0), F = ext.reduce((s, r) => s + r.flavio, 0), T = L + F;
+  const tse = D.tse.slice().sort((a, b) => new Date(a.hora) - new Date(b.hora));
+  const last = tse[tse.length - 1];
+
+  // Placar
+  const setScore = (lp, fp, lv, fv) => {
+    $('score-l').textContent = lp == null ? '—' : pf.format(lp);
+    $('score-f').textContent = fp == null ? '—' : pf.format(fp);
+    $('score-lv').textContent = lv == null ? '' : votos(lv);
+    $('score-fv').textContent = fv == null ? '' : votos(fv);
+    $('bar-l').style.flex = `${lp || 0} 1 0`; $('bar-f').style.flex = `${fp || 0} 1 0`;
+    if (lv != null) { $('bar-l').dataset.tip = `Lula|${votos(lv)} · ${pf.format(lp)}`; $('bar-f').dataset.tip = `Flávio Bolsonaro|${votos(fv)} · ${pf.format(fp)}`; }
+  };
+  if (last) {
+    $('score-chip').textContent = 'Resultado oficial'; $('score-chip').classList.add('oficial');
+    $('score-source').textContent = `Fonte: totalização do TSE, com ${pf.format(last.secoes_pct)} das seções apuradas.`;
+    setScore(last.lula_pct, last.flavio_pct, last.lula_votos, last.flavio_votos);
+  } else {
+    $('score-chip').textContent = 'Parcial · não oficial';
+    $('score-source').textContent = `Soma dos boletins de urna de ${nf.format(ext.length)} ${ext.length === 1 ? 'país' : 'países'} do exterior onde a votação já terminou. Não indica o resultado no Brasil; a totalização oficial do TSE começa às 17h de Brasília.`;
+    setScore(T ? L / T : null, T ? F / T : null, T ? L : null, T ? F : null);
+  }
+  $('stamp').textContent = 'Atualizado às ' + hBsb.format(new Date(D.gerado)) + ' (Brasília)';
+
+  // Continentes
+  const grupos = new Map(REGIOES.map(([nome]) => [nome, []]));
+  ext.forEach((r) => { const g = regiaoDe(r.pais); if (!grupos.has(g)) grupos.set(g, []); grupos.get(g).push(r); });
+  grupos.forEach((lista, nome) => {
+    if (nome === 'Outros' && !lista.length) return;
+    const box = el('div', 'region');
+    const head = el('div', 'region-head');
+    head.append(el('h3', '', nome));
+    if (lista.length) {
+      const nl = lista.filter((r) => r.lula >= r.flavio).length;
+      head.append(el('span', 'region-count', `${nf.format(lista.length)} ${lista.length === 1 ? 'país' : 'países'} · Lula à frente em ${nl}, Flávio em ${lista.length - nl}`));
+    }
+    box.append(head);
+    if (!lista.length) { box.append(el('p', 'region-empty', 'Ainda sem boletins do 2º turno.')); $('regions').append(box); return; }
+    const grid = el('div', 'tiles-c');
+    lista.forEach((r) => {
+      const lulaFrente = r.lula >= r.flavio;
+      const t = el('div', 'ctile');
+      const top = el('div', 'ctile-top'); top.append(el('span', 'dot ' + (lulaFrente ? 'lula' : 'flavio')), el('span', 'ctile-name', r.pais));
+      const lead = el('div', 'ctile-lead');
+      lead.append(el('b', lulaFrente ? 'lula' : 'flavio', lulaFrente ? 'Lula' : 'Flávio'), ` ${pf.format(lulaFrente ? r.lula_pct : r.flavio_pct)}`);
+      const mini = el('div', 'mini'); const ml = el('div', 'l'); ml.style.flex = `${r.lula_pct} 1 0`; ml.dataset.tip = `Lula · ${r.pais}|${votos(r.lula)} · ${pf.format(r.lula_pct)}`; const mf = el('div', 'f'); mf.style.flex = `${r.flavio_pct} 1 0`; mf.dataset.tip = `Flávio · ${r.pais}|${votos(r.flavio)} · ${pf.format(r.flavio_pct)}`; mini.append(ml, mf);
+      t.append(top, lead, mini, el('div', 'ctile-votes', `${nf.format(r.lula)} × ${nf.format(r.flavio)} votos`));
+      grid.append(t);
+    });
+    box.append(grid);
+    $('regions').append(box);
+  });
+  ext.forEach((r) => {
+    const tr = el('tr');
+    [[r.pais, ''], [nf.format(r.lula), 'num'], [nf.format(r.flavio), 'num'], [pf.format(r.lula_pct), 'num'], [pf.format(r.flavio_pct), 'num'],
+     [r.visto_em ? hBsb.format(new Date(r.visto_em)) : '', 'opt'], [r.fonte, 'opt']].forEach(([t, c]) => tr.append(el('td', c, t)));
+    $('ext-table').append(tr);
+  });
+
+  // Comparação
+  const NOMES = { lula: 'Lula', flavio: 'Flávio', outros: 'Outros candidatos' };
+  const stack = (parts, widthPct, rotulo) => {
+    const s = el('div', 'stack'); s.style.width = widthPct + '%';
+    const tot = parts.reduce((t, [v]) => t + (v > 0 ? v : 0), 0);
+    parts.forEach(([v, cls]) => {
+      if (!(v > 0)) return;
+      const g = el('div', 'seg ' + cls); g.style.flex = `${v} 1 0`; g.dataset.label = nf.format(v);
+      g.dataset.tip = `${NOMES[cls]} · ${rotulo}|${votos(v)} · ${pf.format(v / tot)} dos válidos`;
+      s.append(g);
+    });
+    return s;
+  };
+  const lider = (m) => (m >= 0 ? 'Lula' : 'Flávio');
+  const comp = ext.map((r2) => {
+    const r1 = D.primeiro.find((r) => r.pais === r2.pais);
+    return r1 ? { pais: r2.pais, l1: r1.lula, f1: r1.flavio, o1: r1.validos - r1.lula - r1.flavio, l2: r2.lula, f2: r2.flavio } : null;
+  }).filter(Boolean);
+  const sgn = (n) => (n > 0 ? '+' : n < 0 ? '−' : '') + nf.format(Math.abs(n));
+  const fraseDe = (m1, m2) => {
+    const a = Math.abs(m1), b = Math.abs(m2);
+    if (lider(m1) !== lider(m2)) return `${lider(m2)} está ${votos(b)} à frente; no 1º turno estava ${nf.format(a)} atrás.`;
+    return `${lider(m2)} está ${votos(b)} à frente, contra ${nf.format(a)} no 1º turno.`;
+  };
+  const barras = (box, c) => {
+    const t1 = c.l1 + c.o1 + c.f1, t2 = c.l2 + c.f2, max = Math.max(t1, t2);
+    [['2º turno', [[c.l2, 'lula'], [c.f2, 'flavio']], t2, 'atual'], ['1º turno', [[c.l1, 'lula'], [c.o1, 'outros'], [c.f1, 'flavio']], t1, 'ref']].forEach(([lab, parts, tot, cls]) => {
+      const tr = el('div', 'trow ' + cls); tr.append(el('div', 'trow-label', lab), stack(parts, tot / max * 100, lab)); box.append(tr);
+    });
+  };
+
+  // Destaque: soma dos países com os dois turnos
+  const hero = $('hero');
+  if (comp.length) {
+    const S = comp.reduce((s, c) => ({ l1: s.l1 + c.l1, f1: s.f1 + c.f1, o1: s.o1 + c.o1, l2: s.l2 + c.l2, f2: s.f2 + c.f2 }), { l1: 0, f1: 0, o1: 0, l2: 0, f2: 0 });
+    const m1 = S.l1 - S.f1, m2 = S.l2 - S.f2;
+    const h = el('p', 'hero-head');
+    h.append(`Nos ${nf.format(comp.length)} ${comp.length === 1 ? 'país' : 'países'} com resultado dos dois turnos, `, el('b', '', fraseDe(m1, m2).replace(/\.$/, '')), '.');
+    const facts = el('div', 'facts');
+    const fact = (v, cls, lab, small) => { const f = el('div', 'fact' + (small ? ' small' : '')); f.append(el('div', 'fact-v ' + cls, v), el('div', 'fact-l', lab)); facts.append(f); };
+    fact(nf.format(Math.abs(m2)), m2 >= 0 ? 'lula' : 'flavio', `votos de vantagem de ${lider(m2)} hoje`);
+    fact(nf.format(Math.abs(m1)), '', `de vantagem de ${lider(m1)} no 1º turno`, true);
+    fact(sgn(S.l2 - S.l1), 'lula', 'votos para Lula desde o 1º turno');
+    fact(sgn(S.f2 - S.f1), 'flavio', 'votos para Flávio desde o 1º turno');
+    const sub = el('p', 'hero-sub', `Os outros candidatos somavam ${votos(S.o1)} no 1º turno. Os votos válidos variaram ${sgn((S.l2 + S.f2) - (S.l1 + S.f1 + S.o1))} em relação ao 1º turno.`);
+    hero.append(h, facts, sub);
+    barras(hero, S);
+  } else {
+    hero.append(el('p', 'hero-head', 'Ainda não há países com resultado dos dois turnos.'));
+  }
+
+  comp.forEach((c) => {
+    const box = el('div', 'country'); box.append(el('h4', '', c.pais), el('p', '', fraseDe(c.l1 - c.f1, c.l2 - c.f2)));
+    barras(box, c);
+    box.append(el('div', 'delta', `Desde o 1º turno: Lula ${sgn(c.l2 - c.l1)} · Flávio ${sgn(c.f2 - c.f1)} · outros tinham ${nf.format(c.o1)}`));
+    $('comp').append(box);
+  });
+
+  // Abstenção
+  const abst = ext.map((r2) => {
+    const r1 = D.primeiro.find((r) => r.pais === r2.pais);
+    const ap = D.aptos[r2.pais];
+    if (!r1 || !ap) return null;
+    const c1 = r1.comparecimento ?? r1.validos, c2 = r2.comparecimento ?? (r2.lula + r2.flavio);
+    return { pais: r2.pais, aptos: ap, c1, c2, a1: 1 - c1 / ap, a2: 1 - c2 / ap, x1: r1.comparecimento == null, x2: r2.comparecimento == null };
+  }).filter((a) => a && a.a1 >= 0 && a.a2 >= 0).sort((a, b) => b.aptos - a.aptos);
+  if (abst.length) {
+    const A = abst.reduce((s, a) => ({ ap: s.ap + a.aptos, c1: s.c1 + a.c1, c2: s.c2 + a.c2 }), { ap: 0, c1: 0, c2: 0 });
+    const t1 = 1 - A.c1 / A.ap, t2 = 1 - A.c2 / A.ap;
+    $('abst-head').textContent = `Nos ${nf.format(abst.length)} ${abst.length === 1 ? 'país' : 'países'} com dados dos dois turnos, a abstenção ${t2 < t1 ? 'caiu' : t2 > t1 ? 'subiu' : 'ficou igual'}: ${p0.format(t2)} no 2º turno, contra ${p0.format(t1)} no 1º. Votaram ${sgn(A.c2 - A.c1).replace('+', '')} ${Math.abs(A.c2 - A.c1) === 1 ? 'pessoa' : 'pessoas'} ${A.c2 >= A.c1 ? 'a mais' : 'a menos'}.`;
+    abst.forEach((a) => {
+      const row = el('div', 'abst-row');
+      const nm = el('div', 'abst-name', a.pais); nm.append(el('small', '', `${nf.format(a.aptos)} aptos`));
+      const bars = el('div', 'abst-bars');
+      [[a.a2, a.x2, ''], [a.a1, a.x1, 'ref']].forEach(([v, aprox, cls]) => {
+        const bar = el('div', 'abar ' + cls);
+        const tr = el('div', 'atrack'); const fl = el('div', 'afill'); fl.style.width = (v * 100) + '%'; tr.append(fl);
+        const mk = el('div', 'amark'); mk.style.left = (D.media_abst_r1 * 100) + '%'; tr.append(mk);
+        bar.append(tr, el('div', 'aval', (aprox ? '≈ ' : '') + pf.format(v)));
+        bars.append(bar);
+      });
+      const dif = a.c2 - a.c1;
+      const verbo = a.a2 < a.a1 ? 'caiu' : a.a2 > a.a1 ? 'subiu' : 'ficou igual';
+      const quem = dif === 0 ? 'votou o mesmo número de pessoas' : `votaram ${nf.format(Math.abs(dif))} ${Math.abs(dif) === 1 ? 'pessoa' : 'pessoas'} ${dif > 0 ? 'a mais' : 'a menos'}`;
+      bars.append(el('div', 'chg', `Abstenção ${verbo} de ${pf.format(a.a1)} para ${pf.format(a.a2)} · ${quem}`));
+      row.append(nm, bars);
+      $('abst').append(row);
+    });
+  } else {
+    $('abst-head').textContent = 'Ainda não há países com dados de participação dos dois turnos.';
+  }
+
+  // TSE
+  if (last) {
+    $('tse-secoes').textContent = pf.format(last.secoes_pct);
+    $('tse-lula').textContent = pf.format(last.lula_pct); $('tse-flavio').textContent = pf.format(last.flavio_pct);
+    if (last.lula_votos != null) $('tse-lula-v').textContent = votos(last.lula_votos);
+    if (last.flavio_votos != null) $('tse-flavio-v').textContent = votos(last.flavio_votos);
+  }
+  const drawTse = () => {
+    const box = $('tse-chart'); box.replaceChildren();
+    if (!tse.length) { box.append(el('div', 'empty', 'A totalização começa às 17h de Brasília. Os pontos aparecem aqui a cada atualização.')); return; }
+    const W = Math.max(280, box.clientWidth || 600), H = 240, left = 40, right = 96, top = 10, bottom = 26;
+    const vals = tse.flatMap((r) => [r.lula_pct, r.flavio_pct]);
+    const lo = Math.floor(Math.min(0.4, Math.min(...vals) - 0.02) * 20) / 20, hi = Math.ceil(Math.max(0.6, Math.max(...vals) + 0.02) * 20) / 20;
+    const t0 = new Date(tse[0].hora).getTime(), t1 = tse.length > 1 ? new Date(last.hora).getTime() : t0 + 3600e3;
+    const x = (t) => left + (t - t0) / (t1 - t0) * (W - left - right);
+    const y = (v) => top + (hi - v) / (hi - lo) * (H - top - bottom);
+    const NS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(NS, 'svg'); svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+    const add = (tag, attrs, text) => { const n = document.createElementNS(NS, tag); Object.entries(attrs).forEach(([k, v]) => n.setAttribute(k, v)); if (text !== undefined) n.textContent = text; svg.append(n); return n; };
+    for (let v = lo; v <= hi + 1e-9; v += 0.05) {
+      add('line', { x1: left, x2: W - right, y1: y(v), y2: y(v), stroke: 'var(--line)' });
+      add('text', { x: left - 6, y: y(v), 'text-anchor': 'end', 'dominant-baseline': 'middle' }, p0.format(v));
+    }
+    add('line', { x1: left, x2: W - right, y1: y(0.5), y2: y(0.5), stroke: 'var(--muted)', 'stroke-dasharray': '4 4' });
+    const n = Math.min(tse.length, Math.max(2, Math.floor((W - left - right) / 70)));
+    for (let i = 0; i < n; i++) { const t = t0 + (t1 - t0) * (n === 1 ? 0 : i / (n - 1)); add('text', { x: x(t), y: H - 6, 'text-anchor': 'middle' }, hBsb.format(new Date(t))); }
+    const ends = [];
+    [['lula_pct', 'var(--lula)', 'Lula'], ['flavio_pct', 'var(--flavio)', 'Flávio']].forEach(([k, c, name]) => {
+      add('path', { d: tse.map((r, i) => `${i ? 'L' : 'M'}${x(new Date(r.hora).getTime()).toFixed(1)},${y(r[k]).toFixed(1)}`).join(''), fill: 'none', stroke: c, 'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' });
+      tse.forEach((r) => add('circle', { cx: x(new Date(r.hora).getTime()), cy: y(r[k]), r: 3, fill: c }));
+      ends.push({ y: y(last[k]), c, t: `${name} ${pf.format(last[k])}` });
+    });
+    ends.sort((a, b) => a.y - b.y);
+    if (ends[1].y - ends[0].y < 14) { const m = (ends[0].y + ends[1].y) / 2; ends[0].y = m - 7; ends[1].y = m + 7; }
+    ends.forEach((e) => { const t = add('text', { x: x(new Date(last.hora).getTime()) + 8, y: e.y, 'dominant-baseline': 'middle' }, e.t); t.style.fill = e.c; });
+    box.append(svg);
+  };
+  drawTse();
+  let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(drawTse, 150); });
+
+  // Dica ao passar o mouse (ou tocar) nas barras
+  const tip = el('div', 'tip'); tip.hidden = true; document.body.append(tip);
+  let ativo = null;
+  const mostrar = (alvo, x, y) => {
+    if (ativo && ativo !== alvo) ativo.classList.remove('on');
+    ativo = alvo; alvo.classList.add('on');
+    const [t, v] = alvo.dataset.tip.split('|');
+    tip.replaceChildren(el('b', '', t), el('span', '', v));
+    tip.hidden = false;
+    const w = tip.offsetWidth, h = tip.offsetHeight;
+    tip.style.left = Math.max(8, Math.min(x + 12, window.innerWidth - w - 8)) + 'px';
+    tip.style.top = (y - h - 12 < 8 ? y + 16 : y - h - 12) + 'px';
+  };
+  const esconder = () => { if (ativo) ativo.classList.remove('on'); ativo = null; tip.hidden = true; };
+  document.addEventListener('pointermove', (e) => {
+    if (e.pointerType !== 'mouse') return;
+    const alvo = e.target.closest && e.target.closest('[data-tip]');
+    if (alvo) mostrar(alvo, e.clientX, e.clientY); else if (ativo) esconder();
+  });
+  document.addEventListener('pointerdown', (e) => {
+    if (e.pointerType === 'mouse') return;
+    const alvo = e.target.closest && e.target.closest('[data-tip]');
+    if (alvo) mostrar(alvo, e.clientX, e.clientY); else esconder();
+  });
+  window.addEventListener('scroll', () => { if (ativo) esconder(); }, { passive: true });
+
+  requestAnimationFrame(() => document.querySelectorAll('.seg').forEach((s) => {
+    s.textContent = s.dataset.label;
+    if (s.scrollWidth > s.clientWidth - 6) s.textContent = '';
+  }));
+})();
+</script>
