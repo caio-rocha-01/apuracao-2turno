@@ -455,5 +455,45 @@
   "fonte": "Jornal Razão e CNN Brasil (boletins de urna do TSE; 2 de 2 boletins); brancos 5, nulos 5",
   "visto_em": "2026-10-25T14:03:00-03:00",
   "comparecimento": 482
+ },
+ {
+  "pais": "Irlanda",
+  "lula": 7194,
+  "flavio": 1776,
+  "lula_pct": 0.802,
+  "flavio_pct": 0.198,
+  "fonte": "Jornal Razão (boletins de urna do TSE; 28 boletins); brancos 47, nulos 69",
+  "visto_em": "2026-10-25T15:10:00-03:00",
+  "comparecimento": 9086
+ },
+ {
+  "pais": "Marrocos",
+  "lula": 31,
+  "flavio": 6,
+  "lula_pct": 0.8378,
+  "flavio_pct": 0.1622,
+  "fonte": "Jornal Razão (boletins de urna do TSE; 1 boletim); brancos 3, nulos 1",
+  "visto_em": "2026-10-25T15:10:00-03:00",
+  "comparecimento": 41
+ },
+ {
+  "pais": "Senegal",
+  "lula": 59,
+  "flavio": 22,
+  "lula_pct": 0.7284,
+  "flavio_pct": 0.2716,
+  "fonte": "Jornal Razão (boletins de urna do TSE; 1 boletim); brancos 0, nulos 0",
+  "visto_em": "2026-10-25T15:10:00-03:00",
+  "comparecimento": 81
+ },
+ {
+  "pais": "Romênia",
+  "lula": 40,
+  "flavio": 25,
+  "lula_pct": 0.6154,
+  "flavio_pct": 0.3846,
+  "fonte": "Jornal Razão (boletins de urna do TSE; 1 boletim); brancos 0, nulos 1",
+  "visto_em": "2026-10-25T15:10:00-03:00",
+  "comparecimento": 66
  }
 ]
