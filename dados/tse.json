@@ -1,1 +1,10 @@
-[{"hora": null, "secoes_pct": null, "lula_votos": null, "flavio_votos": null, "lula_pct": null, "flavio_pct": null}]
+[
+  {
+    "hora": "2026-10-25T17:06:00-03:00",
+    "secoes_pct": 0.0025,
+    "lula_votos": 193574,
+    "flavio_votos": 142169,
+    "lula_pct": 0.5766,
+    "flavio_pct": 0.4234
+  }
+]
