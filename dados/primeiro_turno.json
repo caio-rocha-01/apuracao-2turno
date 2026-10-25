@@ -494,5 +494,15 @@
   "validos": 62,
   "fonte": "Jornal Razão, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados",
   "comparecimento": 62
+ },
+ {
+  "pais": "Alemanha",
+  "lula": 13525,
+  "flavio": 3532,
+  "lula_pct": 0.7193,
+  "flavio_pct": 0.1879,
+  "validos": 18802,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 19246
  }
 ]

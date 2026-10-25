@@ -495,5 +495,15 @@
   "fonte": "Jornal Razão (boletins de urna do TSE; 1 boletim); brancos 0, nulos 1",
   "visto_em": "2026-10-25T15:10:00-03:00",
   "comparecimento": 66
+ },
+ {
+  "pais": "Alemanha",
+  "lula": 16549,
+  "flavio": 4374,
+  "lula_pct": 0.7909,
+  "flavio_pct": 0.2091,
+  "fonte": "Painel do Jornal Razão, enviado pelo dono da página (boletins de urna do TSE; 62 de 62 urnas: Berlim, Munique e Frankfurt); brancos 172, nulos 265",
+  "visto_em": "2026-10-25T15:35:00-03:00",
+  "comparecimento": 21360
  }
 ]
