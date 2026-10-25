@@ -1,0 +1,103 @@
+[
+ {
+  "pais": "Nova Zelândia",
+  "lula": 234,
+  "flavio": 64,
+  "lula_pct": 0.7048,
+  "flavio_pct": 0.1928,
+  "validos": 332,
+  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 339
+ },
+ {
+  "pais": "Coreia do Sul",
+  "lula": 123,
+  "flavio": 72,
+  "lula_pct": 0.5694,
+  "flavio_pct": 0.3333,
+  "validos": 216,
+  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+ },
+ {
+  "pais": "Japão",
+  "lula": 5234,
+  "flavio": 24601,
+  "lula_pct": 0.1525,
+  "flavio_pct": 0.7169,
+  "validos": 34318,
+  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10); total de válidos: Portal Mie",
+  "comparecimento": 36627
+ },
+ {
+  "pais": "Austrália",
+  "lula": 4562,
+  "flavio": 2579,
+  "lula_pct": 0.5398,
+  "flavio_pct": 0.3052,
+  "validos": 8451,
+  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+ },
+ {
+  "pais": "China",
+  "lula": 367,
+  "flavio": 203,
+  "lula_pct": 0.5629,
+  "flavio_pct": 0.3113,
+  "validos": 652,
+  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+ },
+ {
+  "pais": "Singapura",
+  "lula": 190,
+  "flavio": 92,
+  "lula_pct": 0.546,
+  "flavio_pct": 0.2644,
+  "validos": 348,
+  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+ },
+ {
+  "pais": "Malásia",
+  "lula": 44,
+  "flavio": 27,
+  "lula_pct": 0.5366,
+  "flavio_pct": 0.3293,
+  "validos": 82,
+  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+ },
+ {
+  "pais": "Filipinas",
+  "lula": 26,
+  "flavio": 33,
+  "lula_pct": 0.4194,
+  "flavio_pct": 0.5323,
+  "validos": 62,
+  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+ },
+ {
+  "pais": "Tailândia",
+  "lula": 40,
+  "flavio": 51,
+  "lula_pct": 0.404,
+  "flavio_pct": 0.5152,
+  "validos": 99,
+  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+ },
+ {
+  "pais": "Indonésia",
+  "lula": 8,
+  "flavio": 19,
+  "lula_pct": 0.2581,
+  "flavio_pct": 0.6129,
+  "validos": 31,
+  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10)"
+ },
+ {
+  "pais": "Taiwan",
+  "lula": 77,
+  "flavio": 107,
+  "lula_pct": null,
+  "flavio_pct": null,
+  "validos": null,
+  "fonte": "g1 (1º turno, 4/10); total de válidos não informado"
+ }
+]

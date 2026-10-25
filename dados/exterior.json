@@ -1,0 +1,103 @@
+[
+ {
+  "pais": "Nova Zelândia",
+  "lula": 418,
+  "flavio": 101,
+  "lula_pct": 0.8054,
+  "flavio_pct": 0.1946,
+  "fonte": "Poder360 e g1 (boletins de urna); confirmado pelo g1; confirmado pela CNN Brasil",
+  "visto_em": "2026-10-25T05:40:00-03:00",
+  "comparecimento": 526
+ },
+ {
+  "pais": "Coreia do Sul",
+  "lula": 148,
+  "flavio": 82,
+  "lula_pct": 0.6435,
+  "flavio_pct": 0.3565,
+  "fonte": "g1, via BNews (boletins de urna); confirmado pelo g1; confirmado pela CNN Brasil",
+  "visto_em": "2026-10-25T05:40:00-03:00"
+ },
+ {
+  "pais": "China",
+  "lula": 502,
+  "flavio": 267,
+  "lula_pct": 0.6528,
+  "flavio_pct": 0.3472,
+  "fonte": "g1 e CNN Brasil (boletins de urna do TSE; inclui Hong Kong)",
+  "visto_em": "2026-10-25T07:00:00-03:00"
+ },
+ {
+  "pais": "Filipinas",
+  "lula": 27,
+  "flavio": 39,
+  "lula_pct": 0.4091,
+  "flavio_pct": 0.5909,
+  "fonte": "g1 (infográfico com boletins de urna); confirmado pela CNN Brasil",
+  "visto_em": "2026-10-25T07:10:00-03:00"
+ },
+ {
+  "pais": "Malásia",
+  "lula": 41,
+  "flavio": 44,
+  "lula_pct": 0.4824,
+  "flavio_pct": 0.5176,
+  "fonte": "g1 (infográfico com boletins de urna); confirmado pela Exame",
+  "visto_em": "2026-10-25T07:10:00-03:00"
+ },
+ {
+  "pais": "Singapura",
+  "lula": 213,
+  "flavio": 121,
+  "lula_pct": 0.6377,
+  "flavio_pct": 0.3623,
+  "fonte": "g1 (infográfico com boletins de urna); confirmado pela CNN Brasil",
+  "visto_em": "2026-10-25T07:10:00-03:00"
+ },
+ {
+  "pais": "Japão",
+  "lula": 7098,
+  "flavio": 28538,
+  "lula_pct": 0.1992,
+  "flavio_pct": 0.8008,
+  "fonte": "Brasil 247 e CNN Brasil (boletins de urna do TSE)",
+  "visto_em": "2026-10-25T06:59:00-03:00",
+  "comparecimento": 37616
+ },
+ {
+  "pais": "Austrália",
+  "lula": 6017,
+  "flavio": 3465,
+  "lula_pct": 0.6346,
+  "flavio_pct": 0.3654,
+  "fonte": "CNN Brasil (boletins de urna do TSE)",
+  "visto_em": "2026-10-25T07:33:00-03:00"
+ },
+ {
+  "pais": "Taiwan",
+  "lula": 94,
+  "flavio": 130,
+  "lula_pct": 0.4196,
+  "flavio_pct": 0.5804,
+  "fonte": "CNN Brasil (boletins de urna do TSE)",
+  "visto_em": "2026-10-25T07:33:00-03:00"
+ },
+ {
+  "pais": "Tailândia",
+  "lula": 56,
+  "flavio": 60,
+  "lula_pct": 0.4828,
+  "flavio_pct": 0.5172,
+  "fonte": "CNN Brasil (boletins de urna do TSE)",
+  "visto_em": "2026-10-25T07:39:00-03:00"
+ },
+ {
+  "pais": "Indonésia",
+  "lula": 15,
+  "flavio": 23,
+  "lula_pct": 0.3947,
+  "flavio_pct": 0.6053,
+  "fonte": "CNN Brasil (boletins de urna do TSE)",
+  "visto_em": "2026-10-25T07:59:00-03:00"
+ }
+]
