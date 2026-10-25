@@ -99,5 +99,15 @@
   "flavio_pct": 0.6053,
   "fonte": "CNN Brasil (boletins de urna do TSE)",
   "visto_em": "2026-10-25T07:59:00-03:00"
+ },
+ {
+  "pais": "Índia",
+  "lula": 25,
+  "flavio": 23,
+  "lula_pct": 0.5208,
+  "flavio_pct": 0.4792,
+  "fonte": "Brasil 247 e Jornal Razão (boletins de urna do TSE)",
+  "visto_em": "2026-10-25T10:15:00-03:00",
+  "comparecimento": 48
  }
 ]
