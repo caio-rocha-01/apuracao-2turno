@@ -95,9 +95,9 @@
   "pais": "Taiwan",
   "lula": 77,
   "flavio": 107,
-  "lula_pct": null,
-  "flavio_pct": null,
-  "validos": null,
-  "fonte": "g1 (1º turno, 4/10); total de válidos não informado"
+  "lula_pct": 0.3532,
+  "flavio_pct": 0.4908,
+  "validos": 218,
+  "fonte": "Resultado do 1º turno por candidato (TSE), enviado pelo autor da página"
  }
 ]
