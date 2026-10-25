@@ -109,5 +109,15 @@
   "fonte": "Brasil 247 e Jornal Razão (boletins de urna do TSE; só Nova Délhi, falta Mumbai)",
   "visto_em": "2026-10-25T10:15:00-03:00",
   "comparecimento": 48
+ },
+ {
+  "pais": "Emirados Árabes Unidos",
+  "lula": 643,
+  "flavio": 772,
+  "lula_pct": 0.4544,
+  "flavio_pct": 0.5456,
+  "fonte": "Jornal Razão e CNN Brasil (boletins de urna do TSE); brancos 19, nulos 31",
+  "visto_em": "2026-10-25T10:33:00-03:00",
+  "comparecimento": 1465
  }
 ]

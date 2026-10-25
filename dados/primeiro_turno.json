@@ -109,5 +109,15 @@
   "validos": 61,
   "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10; Nova Délhi e Mumbai)",
   "comparecimento": 61
+ },
+ {
+  "pais": "Emirados Árabes Unidos",
+  "lula": 512,
+  "flavio": 659,
+  "lula_pct": 0.3779,
+  "flavio_pct": 0.4863,
+  "validos": 1355,
+  "fonte": "A Tarde e Jornal Razão, com dados do TSE (1º turno, 4/10; válidos = comparecimento 1.396 − brancos 13 − nulos 28)",
+  "comparecimento": 1396
  }
 ]
