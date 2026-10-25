@@ -119,5 +119,55 @@
   "validos": 1355,
   "fonte": "A Tarde e Jornal Razão, com dados do TSE (1º turno, 4/10; válidos = comparecimento 1.396 − brancos 13 − nulos 28)",
   "comparecimento": 1396
+ },
+ {
+  "pais": "Jordânia",
+  "lula": 675,
+  "flavio": 59,
+  "lula_pct": 0.8577,
+  "flavio_pct": 0.075,
+  "validos": 787,
+  "fonte": "InfoMoney e Exame, com dados do TSE (1º turno, 4/10; Placar da Nação indisponível nesta execução; válidos calculados pelos percentuais; brancos/nulos da Exame)",
+  "comparecimento": 833
+ },
+ {
+  "pais": "Síria",
+  "lula": 97,
+  "flavio": 7,
+  "lula_pct": 0.8981,
+  "flavio_pct": 0.0648,
+  "validos": 108,
+  "fonte": "InfoMoney e Congresso em Foco, com dados do TSE (1º turno, 4/10; Placar da Nação indisponível nesta execução; válidos calculados pelos percentuais; brancos/nulos da Exame)",
+  "comparecimento": 118
+ },
+ {
+  "pais": "Kuwait",
+  "lula": 54,
+  "flavio": 12,
+  "lula_pct": 0.7397,
+  "flavio_pct": 0.1644,
+  "validos": 73,
+  "fonte": "InfoMoney e Congresso em Foco, com dados do TSE (1º turno, 4/10; Placar da Nação indisponível nesta execução; válidos calculados pelos percentuais; brancos/nulos da Exame)",
+  "comparecimento": 77
+ },
+ {
+  "pais": "Arábia Saudita",
+  "lula": 52,
+  "flavio": 22,
+  "lula_pct": 0.619,
+  "flavio_pct": 0.2619,
+  "validos": 84,
+  "fonte": "InfoMoney, Congresso em Foco e Bahia Notícias, com dados do TSE (1º turno, 4/10; Placar da Nação indisponível nesta execução; outros candidatos 10; brancos/nulos 0 pela Exame)",
+  "comparecimento": 84
+ },
+ {
+  "pais": "Catar",
+  "lula": 147,
+  "flavio": 173,
+  "lula_pct": 0.4118,
+  "flavio_pct": 0.4846,
+  "validos": 357,
+  "fonte": "InfoMoney e Congresso em Foco, com dados do TSE (1º turno, 4/10; Placar da Nação indisponível nesta execução; válidos calculados pelos percentuais; brancos/nulos da Exame)",
+  "comparecimento": 364
  }
 ]

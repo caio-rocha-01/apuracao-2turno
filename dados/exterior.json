@@ -119,5 +119,54 @@
   "fonte": "Jornal Razão e CNN Brasil (boletins de urna do TSE); brancos 19, nulos 31",
   "visto_em": "2026-10-25T10:33:00-03:00",
   "comparecimento": 1465
+ },
+ {
+  "pais": "Jordânia",
+  "lula": 725,
+  "flavio": 76,
+  "lula_pct": 0.9051,
+  "flavio_pct": 0.0949,
+  "fonte": "Jornal Razão e O Povo (boletins de urna do TSE); brancos 11, nulos 14",
+  "visto_em": "2026-10-25T11:53:00-03:00",
+  "comparecimento": 826
+ },
+ {
+  "pais": "Síria",
+  "lula": 106,
+  "flavio": 11,
+  "lula_pct": 0.906,
+  "flavio_pct": 0.094,
+  "fonte": "Exame e O Povo (boletins de urna do TSE); brancos 0, nulos 2",
+  "visto_em": "2026-10-25T11:51:00-03:00",
+  "comparecimento": 119
+ },
+ {
+  "pais": "Kuwait",
+  "lula": 62,
+  "flavio": 17,
+  "lula_pct": 0.7848,
+  "flavio_pct": 0.2152,
+  "fonte": "Exame e O Povo (boletins de urna do TSE)",
+  "visto_em": "2026-10-25T11:51:00-03:00"
+ },
+ {
+  "pais": "Arábia Saudita",
+  "lula": 49,
+  "flavio": 31,
+  "lula_pct": 0.6125,
+  "flavio_pct": 0.3875,
+  "fonte": "Exame, O Povo e Jornal Razão (boletins de urna do TSE); brancos 2, nulos 2",
+  "visto_em": "2026-10-25T11:51:00-03:00",
+  "comparecimento": 84
+ },
+ {
+  "pais": "Catar",
+  "lula": 159,
+  "flavio": 195,
+  "lula_pct": 0.4492,
+  "flavio_pct": 0.5508,
+  "fonte": "Jornal Razão e Exame (boletins de urna do TSE); brancos 4, nulos 5",
+  "visto_em": "2026-10-25T11:54:00-03:00",
+  "comparecimento": 363
  }
 ]
