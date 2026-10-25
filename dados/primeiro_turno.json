@@ -504,5 +504,32 @@
   "validos": 18802,
   "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
   "comparecimento": 19246
+ },
+ {
+  "pais": "Portugal",
+  "lula": 26401,
+  "flavio": 19412,
+  "lula_pct": 0.5245,
+  "flavio_pct": 0.3857,
+  "validos": 50332,
+  "fonte": "CNN Brasil e Poder360, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados"
+ },
+ {
+  "pais": "Reino Unido",
+  "lula": 8640,
+  "flavio": 5366,
+  "lula_pct": 0.5702,
+  "flavio_pct": 0.3541,
+  "validos": 15153,
+  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados"
+ },
+ {
+  "pais": "Itália",
+  "lula": 6148,
+  "flavio": 4386,
+  "lula_pct": 0.53,
+  "flavio_pct": 0.3781,
+  "validos": 11600,
+  "fonte": "InfoMoney, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados"
  }
 ]

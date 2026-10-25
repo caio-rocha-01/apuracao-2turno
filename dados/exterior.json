@@ -505,5 +505,33 @@
   "fonte": "Painel do Jornal Razão, enviado pelo dono da página (boletins de urna do TSE; 62 de 62 urnas: Berlim, Munique e Frankfurt); brancos 172, nulos 265",
   "visto_em": "2026-10-25T15:35:00-03:00",
   "comparecimento": 21360
+ },
+ {
+  "pais": "Portugal",
+  "lula": 34319,
+  "flavio": 23433,
+  "lula_pct": 0.5942,
+  "flavio_pct": 0.4058,
+  "fonte": "Jornal Razão, DN Brasil e Metrópoles (boletins de urna do TSE; 176 de 176 boletins: Lisboa, Porto e Faro)",
+  "visto_em": "2026-10-25T16:15:00-03:00"
+ },
+ {
+  "pais": "Reino Unido",
+  "lula": 10968,
+  "flavio": 6349,
+  "lula_pct": 0.6334,
+  "flavio_pct": 0.3666,
+  "fonte": "Jornal Razão (boletins de urna do TSE; 54 boletins: Londres 48 e Edimburgo 6); brancos 149, nulos 160",
+  "visto_em": "2026-10-25T16:15:00-03:00",
+  "comparecimento": 17626
+ },
+ {
+  "pais": "Itália",
+  "lula": 7921,
+  "flavio": 5283,
+  "lula_pct": 0.5999,
+  "flavio_pct": 0.4001,
+  "fonte": "Jornal Razão, CNN Brasil e Poder360 (boletins de urna do TSE; 59 de 59 boletins)",
+  "visto_em": "2026-10-25T16:15:00-03:00"
  }
 ]
