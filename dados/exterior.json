@@ -362,7 +362,7 @@
   "flavio": 591,
   "lula_pct": 0.7826,
   "flavio_pct": 0.2174,
-  "fonte": "Jornal Razão (boletins de urna do TSE; 7 boletins, todas as seções; o Congresso em Foco ainda mostrava 5 de 7); brancos 26, nulos 34",
+  "fonte": "Jornal Razão e CNN Brasil (boletins de urna do TSE; 7 boletins, todas as seções); brancos 26, nulos 34",
   "visto_em": "2026-10-25T13:58:00-03:00",
   "comparecimento": 2778
  },
@@ -372,7 +372,7 @@
   "flavio": 248,
   "lula_pct": 0.7678,
   "flavio_pct": 0.2322,
-  "fonte": "Jornal Razão (boletins de urna do TSE; 3 boletins); brancos 9, nulos 20",
+  "fonte": "Jornal Razão e CNN Brasil (boletins de urna do TSE; 3 boletins); brancos 9, nulos 20",
   "visto_em": "2026-10-25T13:44:00-03:00",
   "comparecimento": 1097
  },
@@ -382,7 +382,7 @@
   "flavio": 13,
   "lula_pct": 0.7292,
   "flavio_pct": 0.2708,
-  "fonte": "Jornal Razão (boletins de urna do TSE; 1 boletim); brancos 1, nulos 2",
+  "fonte": "Jornal Razão e CNN Brasil (boletins de urna do TSE; 1 boletim); brancos 1, nulos 2",
   "visto_em": "2026-10-25T13:54:00-03:00",
   "comparecimento": 51
  },
@@ -392,8 +392,68 @@
   "flavio": 14,
   "lula_pct": 0.7705,
   "flavio_pct": 0.2295,
-  "fonte": "Jornal Razão (boletins de urna do TSE; 1 boletim); brancos 0, nulos 4",
+  "fonte": "Jornal Razão e CNN Brasil (boletins de urna do TSE; 1 boletim); brancos 0, nulos 4",
   "visto_em": "2026-10-25T13:46:00-03:00",
   "comparecimento": 65
+ },
+ {
+  "pais": "França",
+  "lula": 10676,
+  "flavio": 2039,
+  "lula_pct": 0.8396,
+  "flavio_pct": 0.1604,
+  "fonte": "Jornal Razão e CNN Brasil (boletins de urna do TSE; 38 de 38 boletins: Paris e Marselha); brancos 93, nulos 95",
+  "visto_em": "2026-10-25T14:21:00-03:00",
+  "comparecimento": 12903
+ },
+ {
+  "pais": "Espanha",
+  "lula": 9293,
+  "flavio": 4289,
+  "lula_pct": 0.6842,
+  "flavio_pct": 0.3158,
+  "fonte": "Jornal Razão e CNN Brasil (boletins de urna do TSE; 52 de 52 boletins: Madri e Barcelona); brancos 168, nulos 222",
+  "visto_em": "2026-10-25T14:21:00-03:00",
+  "comparecimento": 13972
+ },
+ {
+  "pais": "Suíça",
+  "lula": 7089,
+  "flavio": 5419,
+  "lula_pct": 0.5668,
+  "flavio_pct": 0.4332,
+  "fonte": "Jornal Razão e CNN Brasil (boletins de urna do TSE; 34 de 34 boletins: Zurique e Genebra); brancos 185, nulos 183",
+  "visto_em": "2026-10-25T14:11:00-03:00",
+  "comparecimento": 12876
+ },
+ {
+  "pais": "Bélgica",
+  "lula": 3064,
+  "flavio": 2154,
+  "lula_pct": 0.5872,
+  "flavio_pct": 0.4128,
+  "fonte": "Jornal Razão e CNN Brasil (boletins de urna do TSE; 14 de 14 boletins: Bruxelas); brancos 51, nulos 57",
+  "visto_em": "2026-10-25T14:21:00-03:00",
+  "comparecimento": 5326
+ },
+ {
+  "pais": "Países Baixos",
+  "lula": 5578,
+  "flavio": 1383,
+  "lula_pct": 0.8013,
+  "flavio_pct": 0.1987,
+  "fonte": "Jornal Razão e CNN Brasil (boletins de urna do TSE; 17 de 17 boletins); brancos 61, nulos 71",
+  "visto_em": "2026-10-25T14:04:00-03:00",
+  "comparecimento": 7093
+ },
+ {
+  "pais": "Hungria",
+  "lula": 355,
+  "flavio": 117,
+  "lula_pct": 0.7521,
+  "flavio_pct": 0.2479,
+  "fonte": "Jornal Razão e CNN Brasil (boletins de urna do TSE; 2 de 2 boletins); brancos 5, nulos 5",
+  "visto_em": "2026-10-25T14:03:00-03:00",
+  "comparecimento": 482
  }
 ]

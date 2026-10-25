@@ -394,5 +394,65 @@
   "validos": 2540,
   "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
   "comparecimento": 2607
+ },
+ {
+  "pais": "França",
+  "lula": 8769,
+  "flavio": 1758,
+  "lula_pct": 0.7823,
+  "flavio_pct": 0.1568,
+  "validos": 11209,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 11415
+ },
+ {
+  "pais": "Espanha",
+  "lula": 7263,
+  "flavio": 3338,
+  "lula_pct": 0.6263,
+  "flavio_pct": 0.2878,
+  "validos": 11597,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 12018
+ },
+ {
+  "pais": "Suíça",
+  "lula": 5194,
+  "flavio": 4525,
+  "lula_pct": 0.4786,
+  "flavio_pct": 0.4169,
+  "validos": 10853,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 11238
+ },
+ {
+  "pais": "Bélgica",
+  "lula": 2516,
+  "flavio": 1959,
+  "lula_pct": 0.5057,
+  "flavio_pct": 0.3938,
+  "validos": 4975,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 5091
+ },
+ {
+  "pais": "Países Baixos",
+  "lula": 4624,
+  "flavio": 1081,
+  "lula_pct": 0.737,
+  "flavio_pct": 0.1723,
+  "validos": 6274,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 6450
+ },
+ {
+  "pais": "Hungria",
+  "lula": 331,
+  "flavio": 93,
+  "lula_pct": 0.7134,
+  "flavio_pct": 0.2004,
+  "validos": 464,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 471
  }
 ]
