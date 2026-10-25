@@ -264,5 +264,135 @@
   "flavio_pct": 0.2256,
   "validos": 164,
   "fonte": "Boatos.org e Tribuna de Jundiaí (1º turno, 4/10, total do país; válidos calculados pelos percentuais publicados)"
+ },
+ {
+  "pais": "Líbano",
+  "lula": 2538,
+  "flavio": 1138,
+  "lula_pct": 0.6536,
+  "flavio_pct": 0.2931,
+  "validos": 3883,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 4097
+ },
+ {
+  "pais": "Palestina",
+  "lula": 1078,
+  "flavio": 46,
+  "lula_pct": 0.9317,
+  "flavio_pct": 0.0398,
+  "validos": 1157,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 1202
+ },
+ {
+  "pais": "Dinamarca",
+  "lula": 1166,
+  "flavio": 195,
+  "lula_pct": 0.79,
+  "flavio_pct": 0.1321,
+  "validos": 1476,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 1522
+ },
+ {
+  "pais": "Áustria",
+  "lula": 979,
+  "flavio": 311,
+  "lula_pct": 0.6655,
+  "flavio_pct": 0.2114,
+  "validos": 1471,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 1522
+ },
+ {
+  "pais": "Polônia",
+  "lula": 183,
+  "flavio": 65,
+  "lula_pct": 0.6489,
+  "flavio_pct": 0.2305,
+  "validos": 282,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 291
+ },
+ {
+  "pais": "República Tcheca",
+  "lula": 279,
+  "flavio": 70,
+  "lula_pct": 0.7028,
+  "flavio_pct": 0.1763,
+  "validos": 397,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 411
+ },
+ {
+  "pais": "Eslovênia",
+  "lula": 61,
+  "flavio": 25,
+  "lula_pct": 0.6224,
+  "flavio_pct": 0.2551,
+  "validos": 98,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 103
+ },
+ {
+  "pais": "Croácia",
+  "lula": 29,
+  "flavio": 17,
+  "lula_pct": 0.6042,
+  "flavio_pct": 0.3542,
+  "validos": 48,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 52
+ },
+ {
+  "pais": "Angola",
+  "lula": 147,
+  "flavio": 101,
+  "lula_pct": 0.5568,
+  "flavio_pct": 0.3826,
+  "validos": 264,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 270
+ },
+ {
+  "pais": "Noruega",
+  "lula": 592,
+  "flavio": 198,
+  "lula_pct": 0.6697,
+  "flavio_pct": 0.224,
+  "validos": 884,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 909
+ },
+ {
+  "pais": "Sérvia",
+  "lula": 30,
+  "flavio": 13,
+  "lula_pct": 0.625,
+  "flavio_pct": 0.2708,
+  "validos": 48,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 48
+ },
+ {
+  "pais": "Eslováquia",
+  "lula": 35,
+  "flavio": 13,
+  "lula_pct": 0.6034,
+  "flavio_pct": 0.2241,
+  "validos": 58,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 61
+ },
+ {
+  "pais": "Suécia",
+  "lula": 1770,
+  "flavio": 505,
+  "lula_pct": 0.6969,
+  "flavio_pct": 0.1988,
+  "validos": 2540,
+  "fonte": "Placar da Nação, com dados do TSE (1º turno, 4/10)",
+  "comparecimento": 2607
  }
 ]

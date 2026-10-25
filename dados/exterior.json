@@ -265,5 +265,135 @@
   "fonte": "Jornal Razão (5 boletins de urna do TSE); brancos 18, nulos 19",
   "visto_em": "2026-10-25T12:49:00-03:00",
   "comparecimento": 902
+ },
+ {
+  "pais": "Líbano",
+  "lula": 2736,
+  "flavio": 1276,
+  "lula_pct": 0.682,
+  "flavio_pct": 0.318,
+  "fonte": "Jornal Razão, CNN Brasil e Congresso em Foco (boletins de urna do TSE; 13 boletins); brancos 78, nulos 70",
+  "visto_em": "2026-10-25T13:11:00-03:00",
+  "comparecimento": 4160
+ },
+ {
+  "pais": "Palestina",
+  "lula": 1000,
+  "flavio": 46,
+  "lula_pct": 0.956,
+  "flavio_pct": 0.044,
+  "fonte": "Jornal Razão, CNN Brasil e Congresso em Foco (boletins de urna do TSE; 3 boletins); brancos 8, nulos 15",
+  "visto_em": "2026-10-25T13:07:00-03:00",
+  "comparecimento": 1069
+ },
+ {
+  "pais": "Dinamarca",
+  "lula": 1383,
+  "flavio": 243,
+  "lula_pct": 0.8506,
+  "flavio_pct": 0.1494,
+  "fonte": "Jornal Razão e Congresso em Foco (boletins de urna do TSE; 4 boletins); brancos 24, nulos 27",
+  "visto_em": "2026-10-25T13:37:00-03:00",
+  "comparecimento": 1677
+ },
+ {
+  "pais": "Áustria",
+  "lula": 1178,
+  "flavio": 393,
+  "lula_pct": 0.7498,
+  "flavio_pct": 0.2502,
+  "fonte": "Jornal Razão e Congresso em Foco (boletins de urna do TSE; 5 boletins); brancos 21, nulos 31",
+  "visto_em": "2026-10-25T13:43:00-03:00",
+  "comparecimento": 1623
+ },
+ {
+  "pais": "Polônia",
+  "lula": 268,
+  "flavio": 89,
+  "lula_pct": 0.7507,
+  "flavio_pct": 0.2493,
+  "fonte": "Jornal Razão e Congresso em Foco (boletins de urna do TSE; 1 boletim); brancos 1, nulos 5",
+  "visto_em": "2026-10-25T13:16:00-03:00",
+  "comparecimento": 363
+ },
+ {
+  "pais": "República Tcheca",
+  "lula": 304,
+  "flavio": 86,
+  "lula_pct": 0.7795,
+  "flavio_pct": 0.2205,
+  "fonte": "Jornal Razão e Congresso em Foco (boletins de urna do TSE; 1 boletim); brancos 6, nulos 10",
+  "visto_em": "2026-10-25T13:16:00-03:00",
+  "comparecimento": 406
+ },
+ {
+  "pais": "Eslovênia",
+  "lula": 67,
+  "flavio": 28,
+  "lula_pct": 0.7053,
+  "flavio_pct": 0.2947,
+  "fonte": "Jornal Razão e Congresso em Foco (boletins de urna do TSE; 1 boletim); brancos 1, nulos 4",
+  "visto_em": "2026-10-25T13:27:00-03:00",
+  "comparecimento": 100
+ },
+ {
+  "pais": "Croácia",
+  "lula": 31,
+  "flavio": 26,
+  "lula_pct": 0.5439,
+  "flavio_pct": 0.4561,
+  "fonte": "Jornal Razão e Congresso em Foco (boletins de urna do TSE; 1 boletim); brancos 1, nulos 1",
+  "visto_em": "2026-10-25T13:34:00-03:00",
+  "comparecimento": 59
+ },
+ {
+  "pais": "Angola",
+  "lula": 167,
+  "flavio": 118,
+  "lula_pct": 0.586,
+  "flavio_pct": 0.414,
+  "fonte": "Jornal Razão e Congresso em Foco (boletins de urna do TSE; 1 boletim); brancos 1, nulos 3",
+  "visto_em": "2026-10-25T13:37:00-03:00",
+  "comparecimento": 289
+ },
+ {
+  "pais": "Suécia",
+  "lula": 2127,
+  "flavio": 591,
+  "lula_pct": 0.7826,
+  "flavio_pct": 0.2174,
+  "fonte": "Jornal Razão (boletins de urna do TSE; 7 boletins, todas as seções; o Congresso em Foco ainda mostrava 5 de 7); brancos 26, nulos 34",
+  "visto_em": "2026-10-25T13:58:00-03:00",
+  "comparecimento": 2778
+ },
+ {
+  "pais": "Noruega",
+  "lula": 820,
+  "flavio": 248,
+  "lula_pct": 0.7678,
+  "flavio_pct": 0.2322,
+  "fonte": "Jornal Razão (boletins de urna do TSE; 3 boletins); brancos 9, nulos 20",
+  "visto_em": "2026-10-25T13:44:00-03:00",
+  "comparecimento": 1097
+ },
+ {
+  "pais": "Sérvia",
+  "lula": 35,
+  "flavio": 13,
+  "lula_pct": 0.7292,
+  "flavio_pct": 0.2708,
+  "fonte": "Jornal Razão (boletins de urna do TSE; 1 boletim); brancos 1, nulos 2",
+  "visto_em": "2026-10-25T13:54:00-03:00",
+  "comparecimento": 51
+ },
+ {
+  "pais": "Eslováquia",
+  "lula": 47,
+  "flavio": 14,
+  "lula_pct": 0.7705,
+  "flavio_pct": 0.2295,
+  "fonte": "Jornal Razão (boletins de urna do TSE; 1 boletim); brancos 0, nulos 4",
+  "visto_em": "2026-10-25T13:46:00-03:00",
+  "comparecimento": 65
  }
 ]
