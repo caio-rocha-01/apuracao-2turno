@@ -31,3 +31,14 @@ site = (
 )
 (here.parent / "index.html").write_text(site)
 print("public.html gerado", gerado, len(exterior), "países,", len(tse), "registros do TSE")
+
+# Aviso: países do 2º turno que ficam fora do destaque (comparação 1º × 2º turno).
+r1 = {r["pais"]: r for r in primeiro}
+sem_r1 = [r["pais"] for r in exterior if r["pais"] not in r1]
+sem_validos = [r["pais"] for r in exterior if r["pais"] in r1 and r1[r["pais"]].get("validos") is None]
+if sem_r1 or sem_validos:
+    print(f"AVISO: o destaque soma {len(exterior) - len(sem_r1) - len(sem_validos)} de {len(exterior)} países.")
+    if sem_r1:
+        print("  sem 1º turno em primeiro_turno.json:", ", ".join(sem_r1))
+    if sem_validos:
+        print("  sem 'validos' do 1º turno:", ", ".join(sem_validos))

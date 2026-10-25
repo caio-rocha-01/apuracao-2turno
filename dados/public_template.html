@@ -391,14 +391,23 @@
 
   // Destaque: soma dos países com os dois turnos
   const hero = $('hero');
+  // Todo país do 2º turno entra na soma ou aparece aqui com o motivo, para o destaque bater com o total do placar.
+  const semR1 = ext.filter((r2) => !D.primeiro.some((r) => r.pais === r2.pais)).map((r) => r.pais);
+  const semValidos = comp.filter((c) => c.o1 == null).map((c) => c.pais);
+  const listaFora = (lista, motivo) => lista.length ? `${lista.join(', ')} (${motivo})` : '';
+  const textoFora = () => {
+    const partes = [listaFora(semR1, 'falta o resultado do 1º turno'), listaFora(semValidos, 'falta o total de votos válidos do 1º turno')].filter(Boolean);
+    return partes.length ? ` Fora da soma: ${partes.join('; ')}.` : '';
+  };
   if (comp.some((c) => c.o1 != null)) {
     const compT = comp.filter((c) => c.o1 != null);
     const S = compT.reduce((s, c) => ({ l1: s.l1 + c.l1, f1: s.f1 + c.f1, o1: s.o1 + c.o1, l2: s.l2 + c.l2, f2: s.f2 + c.f2 }), { l1: 0, f1: 0, o1: 0, l2: 0, f2: 0 });
     const m1 = S.l1 - S.f1, m2 = S.l2 - S.f2;
     const h = el('p', 'hero-head');
-    h.append(`Nos ${nf.format(compT.length)} ${compT.length === 1 ? 'país' : 'países'} com resultado dos dois turnos, `, el('b', '', fraseDe(m1, m2).replace(/\.$/, '')), '.');
-    const fora = comp.filter((c) => c.o1 == null).map((c) => c.pais);
-    if (fora.length) h.append(el('span', 'hero-out', ` ${fora.join(', ')} ${fora.length === 1 ? 'fica' : 'ficam'} fora da soma: falta o total de votos válidos do 1º turno.`));
+    const quantos = compT.length === ext.length ? `Nos ${nf.format(compT.length)} ${compT.length === 1 ? 'país' : 'países'} com resultado dos dois turnos` : `Em ${nf.format(compT.length)} dos ${nf.format(ext.length)} países com boletins do 2º turno`;
+    h.append(`${quantos}, `, el('b', '', fraseDe(m1, m2).replace(/\.$/, '')), '.');
+    const fora = textoFora();
+    if (fora) h.append(el('span', 'hero-out', fora.trim()));
     const facts = el('div', 'facts');
     const fact = (v, cls, lab, small) => { const f = el('div', 'fact' + (small ? ' small' : '')); f.append(el('div', 'fact-v ' + cls, v), el('div', 'fact-l', lab)); facts.append(f); };
     fact(nf.format(Math.abs(m2)), m2 >= 0 ? 'lula' : 'flavio', `votos de vantagem de ${lider(m2)} hoje`);
@@ -409,7 +418,10 @@
     hero.append(h, facts, sub);
     barras(hero, S);
   } else {
-    hero.append(el('p', 'hero-head', 'Ainda não há países com resultado dos dois turnos.'));
+    const h = el('p', 'hero-head', 'Ainda não há países com resultado dos dois turnos.');
+    const fora = textoFora();
+    if (fora) h.append(el('span', 'hero-out', fora.trim()));
+    hero.append(h);
   }
 
   comp.forEach((c) => {
