@@ -459,7 +459,7 @@
     if (!r1 || !ap || r1.validos == null) return null;
     const c1 = r1.comparecimento ?? r1.validos, c2 = r2.comparecimento ?? (r2.lula + r2.flavio);
     return { pais: r2.pais, aptos: ap, c1, c2, a1: 1 - c1 / ap, a2: 1 - c2 / ap, x1: r1.comparecimento == null, x2: r2.comparecimento == null };
-  }).filter((a) => a && a.a1 >= 0 && a.a2 >= 0).sort((a, b) => b.aptos - a.aptos);
+  }).filter((a) => a && a.a1 >= 0 && a.a2 >= 0).sort((a, b) => longDe(a.pais) - longDe(b.pais) || b.aptos - a.aptos);
   if (abst.length) {
     const A = abst.reduce((s, a) => ({ ap: s.ap + a.aptos, c1: s.c1 + a.c1, c2: s.c2 + a.c2 }), { ap: 0, c1: 0, c2: 0 });
     const t1 = 1 - A.c1 / A.ap, t2 = 1 - A.c2 / A.ap;
