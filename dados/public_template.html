@@ -298,7 +298,26 @@
   ];
   const regiaoDe = (pais) => { const r = REGIOES.find(([, lista]) => lista.includes(pais)); return r ? r[0] : 'Outros'; };
 
-  const ext = D.exterior.slice().sort((a, b) => (b.lula + b.flavio) - (a.lula + a.flavio));
+  // Longitude aproximada da capital (ou da principal cidade com seção eleitoral): países ordenados de oeste para leste.
+  const LONG = {
+    'Havaí': -157.9, 'Estados Unidos': -77.0, 'Canadá': -75.7, 'México': -99.1, 'Guatemala': -90.5, 'El Salvador': -89.2, 'Honduras': -87.2, 'Nicarágua': -86.3,
+    'Costa Rica': -84.1, 'Cuba': -82.4, 'Panamá': -79.5, 'Jamaica': -76.8, 'Bahamas': -77.3, 'Peru': -77.0, 'Equador': -78.5, 'Colômbia': -74.1, 'Haiti': -72.3,
+    'República Dominicana': -69.9, 'Chile': -70.7, 'Bolívia': -68.1, 'Venezuela': -66.9, 'Trinidad e Tobago': -61.5, 'Barbados': -59.6, 'Belize': -88.8,
+    'Guiana': -58.2, 'Argentina': -58.4, 'Paraguai': -57.6, 'Uruguai': -56.2, 'Suriname': -55.2, 'Guiana Francesa': -52.3,
+    'Cabo Verde': -23.5, 'Senegal': -17.4, 'Guiné-Bissau': -15.6, 'Portugal': -9.1, 'Irlanda': -6.3, 'Marrocos': -6.8, 'Costa do Marfim': -4.0,
+    'Espanha': -3.7, 'Reino Unido': -0.1, 'Gana': -0.2, 'Argélia': 3.1, 'França': 2.4, 'Bélgica': 4.4, 'Holanda': 4.9, 'Países Baixos': 4.9,
+    'Nigéria': 7.5, 'Suíça': 7.4, 'Luxemburgo': 6.1, 'Mônaco': 7.4, 'Noruega': 10.8, 'Tunísia': 10.2, 'Dinamarca': 12.6, 'Itália': 12.5, 'Vaticano': 12.5, 'Santa Sé': 12.5,
+    'Alemanha': 13.4, 'Angola': 13.2, 'Líbia': 13.2, 'Malta': 14.5, 'República Tcheca': 14.4, 'Tchéquia': 14.4, 'Eslovênia': 14.5, 'Áustria': 16.4, 'Croácia': 16.0,
+    'Namíbia': 17.1, 'Eslováquia': 17.1, 'Suécia': 18.1, 'Hungria': 19.0, 'Sérvia': 20.5, 'Polônia': 21.0, 'Grécia': 23.7, 'Bulgária': 23.3, 'Finlândia': 24.9,
+    'Estônia': 24.8, 'Romênia': 26.1, 'África do Sul': 28.2, 'Ucrânia': 30.5, 'Egito': 31.2, 'Moçambique': 32.6, 'Turquia': 32.9, 'Chipre': 33.4,
+    'Israel': 35.2, 'Palestina': 35.2, 'Territórios Palestinos': 35.2, 'Líbano': 35.5, 'Jordânia': 35.9, 'Síria': 36.3, 'Quênia': 36.8, 'Rússia': 37.6,
+    'Tanzânia': 39.3, 'Etiópia': 38.7, 'Arábia Saudita': 46.7, 'Kuwait': 48.0, 'Bahrein': 50.6, 'Barein': 50.6, 'Irã': 51.4, 'Catar': 51.5,
+    'Emirados Árabes Unidos': 54.4, 'Emirados Árabes': 54.4, 'Omã': 58.4, 'Índia': 77.2, 'Nepal': 85.3, 'Tailândia': 100.5, 'Malásia': 101.7,
+    'Singapura': 103.8, 'Vietnã': 105.8, 'Indonésia': 106.8, 'China': 116.4, 'Hong Kong': 114.2, 'Filipinas': 121.0, 'Taiwan': 121.5, 'Timor-Leste': 125.6,
+    'Coreia do Sul': 127.0, 'Japão': 139.7, 'Austrália': 149.1, 'Nova Zelândia': 174.8,
+  };
+  const longDe = (pais) => (pais in LONG ? LONG[pais] : 999);
+  const ext = D.exterior.slice().sort((a, b) => longDe(a.pais) - longDe(b.pais) || (b.lula + b.flavio) - (a.lula + a.flavio));
   const L = ext.reduce((s, r) => s + r.lula, 0), F = ext.reduce((s, r) => s + r.flavio, 0), T = L + F;
   const tse = D.tse.slice().sort((a, b) => new Date(a.hora) - new Date(b.hora));
   const last = tse[tse.length - 1];
@@ -324,9 +343,11 @@
   $('stamp').textContent = 'Atualizado às ' + hBsb.format(new Date(D.gerado)) + ' (Brasília)';
 
   // Continentes
-  const grupos = new Map(REGIOES.map(([nome]) => [nome, []]));
+  // Continentes de oeste para leste (Américas no topo); os que ainda não têm boletins vão para o fim.
+  const ORDEM = ['Américas', 'Europa', 'Oriente Médio e África', 'Ásia e Oceania'];
+  const grupos = new Map(ORDEM.map((nome) => [nome, []]));
   ext.forEach((r) => { const g = regiaoDe(r.pais); if (!grupos.has(g)) grupos.set(g, []); grupos.get(g).push(r); });
-  grupos.forEach((lista, nome) => {
+  [...grupos].sort(([, a], [, b]) => (b.length > 0) - (a.length > 0)).forEach(([nome, lista]) => {
     if (nome === 'Outros' && !lista.length) return;
     const box = el('div', 'region');
     const head = el('div', 'region-head');
