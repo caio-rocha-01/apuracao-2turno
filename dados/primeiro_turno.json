@@ -663,10 +663,10 @@
     "pais": "Guiana Francesa",
     "lula": 484,
     "flavio": 518,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.4465,
+    "flavio_pct": 0.4779,
+    "validos": 1084,
+    "fonte": "Tribuna de Jundiaí e Boatos.org (1º turno, 4/10, total do país); válidos somados dos candidatos"
   },
   {
     "pais": "Equador",
@@ -712,5 +712,23 @@
     "flavio_pct": 0.611,
     "validos": 73656,
     "fonte": "Exame, InfoMoney e elves.com.br (votos, 1º turno, 4/10, total do país); válidos deduzidos dos percentuais da CNN Brasil (31,68% e 61,10%; ±6)"
+  },
+  {
+    "pais": "Argentina",
+    "lula": 3747,
+    "flavio": 1681,
+    "lula_pct": 0.6444,
+    "flavio_pct": 0.2891,
+    "validos": 5815,
+    "fonte": "Boatos.org (1º turno, 4/10, total do país; válidos somados dos candidatos); confere com Diário do Nordeste"
+  },
+  {
+    "pais": "Canadá",
+    "lula": 12508,
+    "flavio": 7043,
+    "lula_pct": 0.5775,
+    "flavio_pct": 0.3252,
+    "validos": 21658,
+    "fonte": "Boatos.org e Poder360 (1º turno, 4/10, total do país; válidos somados dos candidatos); confere com Jornal Brasil Vancouver (57,8%)"
   }
 ]

@@ -727,5 +727,25 @@
     "fonte": "CNN Brasil (TSE, 100% das urnas; 11 jurisdições consulares); brancos 0,85% e nulos 1,05%; confere com Terra (62,65%)",
     "visto_em": "2026-10-25T22:00:00-03:00",
     "comparecimento": 87407
+  },
+  {
+    "pais": "Argentina",
+    "lula": 4466,
+    "flavio": 2028,
+    "lula_pct": 0.6877,
+    "flavio_pct": 0.3123,
+    "fonte": "CNN Brasil (TSE, 100% das urnas); brancos 0,97% e nulos 1,00%; confere com Diário do RN (68,77%)",
+    "visto_em": "2026-10-25T21:28:00-03:00",
+    "comparecimento": 6624
+  },
+  {
+    "pais": "Canadá",
+    "lula": 15776,
+    "flavio": 8501,
+    "lula_pct": 0.6498,
+    "flavio_pct": 0.3502,
+    "fonte": "CNN Brasil e Jornal Brasil Vancouver (TSE, 100% das urnas; Vancouver, Toronto, Montreal e Ottawa); brancos 304, nulos 458",
+    "visto_em": "2026-10-25T21:36:00-03:00",
+    "comparecimento": 25039
   }
 ]

@@ -134,5 +134,13 @@
     "flavio_votos": 59824515,
     "lula_pct": 0.5178,
     "flavio_pct": 0.4822
+  },
+  {
+    "hora": "2026-10-26T00:22:00-03:00",
+    "secoes_pct": 1.0,
+    "lula_votos": 64256232,
+    "flavio_votos": 59826041,
+    "lula_pct": 0.5179,
+    "flavio_pct": 0.4821
   }
 ]
