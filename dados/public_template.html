@@ -1,4 +1,4 @@
-<title>Apuração do 2º turno 2026</title>
+<title>Resultado do 2º turno 2026</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -197,9 +197,9 @@
     <div class="top-row">
     <div>
       <p class="kicker"><span>Eleição presidencial 2026</span><span>Domingo, 25 de outubro</span></p>
-      <h1>Apuração do 2º turno para presidente</h1>
-      <p class="meta"><span class="chip" id="score-chip"></span><span id="stamp"></span><span>Atualização a cada hora</span></p>
-      <p class="scope">Só a disputa para presidente, entre Lula e Flávio Bolsonaro. Os segundos turnos para governador e as eleições municipais suplementares de hoje não estão nesta página.</p>
+      <h1>Resultado do 2º turno para presidente</h1>
+      <p class="meta"><span class="chip" id="score-chip"></span><span id="stamp"></span></p>
+      <p class="scope">Só a disputa para presidente, entre Lula e Flávio Bolsonaro. Os segundos turnos para governador e as eleições municipais suplementares do mesmo dia não estão nesta página.</p>
     </div>
     <svg class="flag" viewBox="0 0 200 140" role="img" aria-label="Bandeira do Brasil">
       <defs><clipPath id="globo"><circle cx="100" cy="70" r="35"></circle></clipPath></defs>
@@ -260,8 +260,8 @@
     <section id="exterior">
       <p class="sec-label">Boletins de urna</p>
       <h2>Exterior, continente por continente</h2>
-      <p class="note">Soma não oficial de boletins de urna de seções onde a votação já terminou, segundo levantamentos da imprensa. Cada quadro mostra quem ficou à frente no país e por quanto. O eleitorado no exterior vota de forma diferente do Brasil.</p>
-      <div class="legend"><span><span class="dot lula"></span>Lula à frente</span><span><span class="dot flavio"></span>Flávio à frente</span></div>
+      <p class="note">Soma não oficial dos boletins de urna de cada país, segundo levantamentos da imprensa. Cada quadro mostra quem venceu no país e por quanto. O eleitorado no exterior votou de forma diferente do Brasil.</p>
+      <div class="legend"><span><span class="dot lula"></span>Lula venceu</span><span><span class="dot flavio"></span>Flávio venceu</span></div>
       <div class="regions" id="regions"></div>
       <details class="card">
         <summary>Ver tabela com todos os países</summary>
@@ -277,7 +277,7 @@
     <section id="tse">
       <p class="sec-label">Resultado oficial</p>
       <h2>Totalização do TSE</h2>
-      <p class="note">Dados do Portal Resultados do TSE, registrados a cada atualização desta página. Percentuais sobre os votos válidos (sem brancos e nulos).</p>
+      <p class="note">Dados do Portal Resultados do TSE, registrados ao longo da apuração em 25 de outubro. Percentuais sobre os votos válidos (sem brancos e nulos).</p>
       <div class="tiles">
         <div class="tile"><div class="tile-label">Seções totalizadas</div><div class="tile-value" id="tse-secoes">—</div><div class="tile-sub">Brasil e exterior</div></div>
         <div class="tile"><div class="tile-label"><span class="dot lula"></span>Lula (PT)</div><div class="tile-value" id="tse-lula">—</div><div class="tile-sub" id="tse-lula-v"></div></div>
@@ -285,7 +285,7 @@
       </div>
       <div class="card">
         <h3>Evolução dos votos válidos</h3>
-        <p class="card-note">Cada ponto é uma atualização desta página. Horário de Brasília.</p>
+        <p class="card-note">Cada ponto é uma atualização da totalização registrada nesta página. Horário de Brasília.</p>
         <div class="chart" id="tse-chart"></div>
       </div>
     </section>
@@ -370,7 +370,7 @@
       $('score-ref').hidden = false;
     }
   }
-  $('stamp').textContent = 'Atualizado às ' + hBsb.format(new Date(D.gerado)) + ' (Brasília)';
+  $('stamp').textContent = 'Última atualização: ' + new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: '2-digit', timeZone: 'America/Sao_Paulo' }).format(new Date(D.gerado)) + ' às ' + hBsb.format(new Date(D.gerado)) + ' (Brasília)';
 
   // Continentes
   // Continentes de oeste para leste (Américas no topo); os que ainda não têm boletins vão para o fim.
@@ -384,10 +384,10 @@
     head.append(el('h3', '', nome));
     if (lista.length) {
       const nl = lista.filter((r) => r.lula >= r.flavio).length;
-      head.append(el('span', 'region-count', `${nf.format(lista.length)} ${lista.length === 1 ? 'país' : 'países'} · Lula à frente em ${nl}, Flávio em ${lista.length - nl}`));
+      head.append(el('span', 'region-count', `${nf.format(lista.length)} ${lista.length === 1 ? 'país' : 'países'} · Lula venceu em ${nl}, Flávio em ${lista.length - nl}`));
     }
     box.append(head);
-    if (!lista.length) { box.append(el('p', 'region-empty', 'Ainda sem boletins do 2º turno.')); $('regions').append(box); return; }
+    if (!lista.length) { box.append(el('p', 'region-empty', 'Sem boletins do 2º turno nesta página.')); $('regions').append(box); return; }
     const grid = el('div', 'tiles-c');
     lista.forEach((r) => {
       const lulaFrente = r.lula >= r.flavio;
@@ -430,8 +430,8 @@
   const sgn = (n) => (n > 0 ? '+' : n < 0 ? '−' : '') + nf.format(Math.abs(n));
   const fraseDe = (m1, m2) => {
     const a = Math.abs(m1), b = Math.abs(m2);
-    if (lider(m1) !== lider(m2)) return `${lider(m2)} está ${votos(b)} à frente; no 1º turno estava ${nf.format(a)} atrás.`;
-    return `${lider(m2)} está ${votos(b)} à frente, contra ${nf.format(a)} no 1º turno.`;
+    if (lider(m1) !== lider(m2)) return `${lider(m2)} terminou ${votos(b)} à frente; no 1º turno tinha ficado ${nf.format(a)} atrás.`;
+    return `${lider(m2)} terminou ${votos(b)} à frente, contra ${nf.format(a)} no 1º turno.`;
   };
   const barras = (box, c) => {
     const t1 = c.l1 + c.o1 + c.f1, t2 = c.l2 + c.f2, max = Math.max(t1, t2);
@@ -493,7 +493,7 @@
     if (fora) h.append(el('span', 'hero-out', fora.trim()));
     const facts = el('div', 'facts');
     const fact = (v, cls, lab, small) => { const f = el('div', 'fact' + (small ? ' small' : '')); f.append(el('div', 'fact-v ' + cls, v), el('div', 'fact-l', lab)); facts.append(f); };
-    fact(nf.format(Math.abs(m2)), m2 >= 0 ? 'lula' : 'flavio', `votos de vantagem de ${lider(m2)} hoje`);
+    fact(nf.format(Math.abs(m2)), m2 >= 0 ? 'lula' : 'flavio', `votos de vantagem de ${lider(m2)} no 2º turno`);
     fact(nf.format(Math.abs(m1)), '', `de vantagem de ${lider(m1)} no 1º turno`, true);
     fact(sgn(S.l2 - S.l1), 'lula', 'votos para Lula desde o 1º turno');
     fact(sgn(S.f2 - S.f1), 'flavio', 'votos para Flávio desde o 1º turno');
@@ -501,7 +501,7 @@
     hero.append(h, facts, sub);
     barras(hero, S);
   } else {
-    const h = el('p', 'hero-head', 'Ainda não há países com resultado dos dois turnos.');
+    const h = el('p', 'hero-head', 'Não há países com resultado dos dois turnos.');
     const fora = textoFora();
     if (fora) h.append(el('span', 'hero-out', fora.trim()));
     hero.append(h);
@@ -545,7 +545,7 @@
       $('abst').append(row);
     });
   } else {
-    $('abst-head').textContent = 'Ainda não há países com dados de participação dos dois turnos.';
+    $('abst-head').textContent = 'Não há países com dados de participação dos dois turnos.';
   }
 
   // TSE
