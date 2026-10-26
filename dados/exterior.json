@@ -717,5 +717,15 @@
     "fonte": "Jornal Razão (boletins de urna do TSE); brancos 0, nulos 1",
     "visto_em": "2026-10-25T22:00:00-03:00",
     "comparecimento": 65
+  },
+  {
+    "pais": "Estados Unidos",
+    "lula": 32023,
+    "flavio": 53718,
+    "lula_pct": 0.3735,
+    "flavio_pct": 0.6265,
+    "fonte": "CNN Brasil (TSE, 100% das urnas; 11 jurisdições consulares); brancos 0,85% e nulos 1,05%; confere com Terra (62,65%)",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 87407
   }
 ]

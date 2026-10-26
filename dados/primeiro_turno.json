@@ -546,118 +546,118 @@
     "pais": "Chile",
     "lula": 928,
     "flavio": 809,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos; confere com Poder360"
+    "lula_pct": 0.4708,
+    "flavio_pct": 0.4105,
+    "validos": 1971,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos dos percentuais do Poder360 (47,08% e 41,05%), conferem com elves.com.br"
   },
   {
     "pais": "Paraguai",
     "lula": 546,
     "flavio": 3848,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.1198,
+    "flavio_pct": 0.844,
+    "validos": 4559,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos do percentual publicado por elves.com.br (±2)"
   },
   {
     "pais": "Uruguai",
     "lula": 797,
     "flavio": 701,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.483,
+    "flavio_pct": 0.4248,
+    "validos": 1650,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos do percentual publicado por elves.com.br (±1)"
   },
   {
     "pais": "Venezuela",
     "lula": 128,
     "flavio": 125,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.4885,
+    "flavio_pct": 0.4771,
+    "validos": 262,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos do percentual publicado por elves.com.br"
   },
   {
     "pais": "República Dominicana",
     "lula": 65,
     "flavio": 106,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos; confere com Poder360"
+    "lula_pct": 0.3457,
+    "flavio_pct": 0.5638,
+    "validos": 188,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos dos percentuais do Poder360 (34,57% e 56,38%), conferem com elves.com.br"
   },
   {
     "pais": "México",
     "lula": 585,
     "flavio": 589,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.4549,
+    "flavio_pct": 0.458,
+    "validos": 1286,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos do percentual publicado por elves.com.br (±1)"
   },
   {
     "pais": "Bolívia",
     "lula": 349,
     "flavio": 1387,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos; confere com Poder360"
+    "lula_pct": 0.19,
+    "flavio_pct": 0.755,
+    "validos": 1837,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos dos percentuais do Poder360 (19,00% e 75,50%), conferem com elves.com.br"
   },
   {
     "pais": "Suriname",
     "lula": 121,
     "flavio": 366,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.2241,
+    "flavio_pct": 0.6778,
+    "validos": 540,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos do percentual publicado por elves.com.br"
   },
   {
     "pais": "Guiana",
     "lula": 7,
     "flavio": 43,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.1321,
+    "flavio_pct": 0.8113,
+    "validos": 53,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos do percentual publicado por elves.com.br"
   },
   {
     "pais": "Panamá",
     "lula": 236,
     "flavio": 336,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.3592,
+    "flavio_pct": 0.5114,
+    "validos": 657,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos do percentual publicado por elves.com.br (±1)"
   },
   {
     "pais": "Peru",
     "lula": 248,
     "flavio": 380,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.3402,
+    "flavio_pct": 0.5213,
+    "validos": 729,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos do percentual publicado por elves.com.br (±1)"
   },
   {
     "pais": "Colômbia",
     "lula": 245,
     "flavio": 252,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.4649,
+    "flavio_pct": 0.4782,
+    "validos": 527,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos do percentual publicado por elves.com.br"
   },
   {
     "pais": "Jamaica",
     "lula": 4,
     "flavio": 14,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.2105,
+    "flavio_pct": 0.7368,
+    "validos": 19,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos do percentual publicado por elves.com.br"
   },
   {
     "pais": "Guiana Francesa",
@@ -672,36 +672,45 @@
     "pais": "Equador",
     "lula": 130,
     "flavio": 171,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.3963,
+    "flavio_pct": 0.5213,
+    "validos": 328,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos do percentual publicado por elves.com.br"
   },
   {
     "pais": "Guatemala",
     "lula": 33,
     "flavio": 67,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.2797,
+    "flavio_pct": 0.5678,
+    "validos": 118,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos do percentual publicado por elves.com.br"
   },
   {
     "pais": "Costa Rica",
     "lula": 173,
     "flavio": 159,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.4676,
+    "flavio_pct": 0.4297,
+    "validos": 370,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos do percentual publicado por elves.com.br"
   },
   {
     "pais": "Honduras",
     "lula": 17,
     "flavio": 34,
-    "lula_pct": null,
-    "flavio_pct": null,
-    "validos": null,
-    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+    "lula_pct": 0.2881,
+    "flavio_pct": 0.5763,
+    "validos": 59,
+    "fonte": "Exame e Tribuna de Jundiaí (votos, 1º turno, 4/10, total do país); válidos deduzidos do percentual publicado por elves.com.br"
+  },
+  {
+    "pais": "Estados Unidos",
+    "lula": 23335,
+    "flavio": 45004,
+    "lula_pct": 0.3168,
+    "flavio_pct": 0.611,
+    "validos": 73656,
+    "fonte": "Exame, InfoMoney e elves.com.br (votos, 1º turno, 4/10, total do país); válidos deduzidos dos percentuais da CNN Brasil (31,68% e 61,10%; ±6)"
   }
 ]
