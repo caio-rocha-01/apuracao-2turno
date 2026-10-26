@@ -248,13 +248,12 @@
   },
   {
     "pais": "Turquia",
-    "lula": 98,
-    "flavio": 29,
-    "lula_pct": 0.7717,
-    "flavio_pct": 0.2283,
-    "fonte": "Jornal Razão e Congresso em Foco (boletins de urna do TSE; parcial: 1 de 2 urnas); brancos 0, nulos 0",
-    "visto_em": "2026-10-25T12:49:00-03:00",
-    "comparecimento": 127
+    "lula": 127,
+    "flavio": 37,
+    "lula_pct": 0.7744,
+    "flavio_pct": 0.2256,
+    "fonte": "Poder360 (boletins de urna do TSE; 2 de 2 urnas); confere com Terra (77,44%)",
+    "visto_em": "2026-10-25T22:00:00-03:00"
   },
   {
     "pais": "Israel",
@@ -542,5 +541,181 @@
     "flavio_pct": 0.3766,
     "fonte": "Jornal Razão, CNN Brasil e O Tempo (boletins de urna do TSE); brancos 2, nulos 2",
     "visto_em": "2026-10-25T15:18:00-03:00"
+  },
+  {
+    "pais": "Chile",
+    "lula": 1100,
+    "flavio": 946,
+    "lula_pct": 0.5376,
+    "flavio_pct": 0.4624,
+    "fonte": "Poder360 e Jornal Razão (boletins de urna do TSE); confere com Terra (53,76%)",
+    "visto_em": "2026-10-25T22:00:00-03:00"
+  },
+  {
+    "pais": "Paraguai",
+    "lula": 700,
+    "flavio": 4514,
+    "lula_pct": 0.1343,
+    "flavio_pct": 0.8657,
+    "fonte": "Poder360 e Jornal Razão (boletins de urna do TSE; 15 boletins: Ciudad del Este, Assunção, Salto del Guairá, Pedro Juan Caballero e Encarnación); brancos 77, nulos 44",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 5335
+  },
+  {
+    "pais": "Uruguai",
+    "lula": 879,
+    "flavio": 793,
+    "lula_pct": 0.5257,
+    "flavio_pct": 0.4743,
+    "fonte": "Jornal Razão (boletins de urna do TSE; 5 boletins: Montevidéu e Artigas); brancos 42, nulos 34",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 1748
+  },
+  {
+    "pais": "Venezuela",
+    "lula": 106,
+    "flavio": 136,
+    "lula_pct": 0.438,
+    "flavio_pct": 0.562,
+    "fonte": "Jornal Razão (boletins de urna do TSE; 3 boletins); brancos 3, nulos 1",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 246
+  },
+  {
+    "pais": "República Dominicana",
+    "lula": 90,
+    "flavio": 118,
+    "lula_pct": 0.4327,
+    "flavio_pct": 0.5673,
+    "fonte": "Poder360 e Jornal Razão (boletins de urna do TSE); brancos 0, nulos 3",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 211
+  },
+  {
+    "pais": "México",
+    "lula": 699,
+    "flavio": 658,
+    "lula_pct": 0.5151,
+    "flavio_pct": 0.4849,
+    "fonte": "Jornal Razão (boletins de urna do TSE; 6 boletins); brancos 7, nulos 20",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 1384
+  },
+  {
+    "pais": "Bolívia",
+    "lula": 409,
+    "flavio": 1475,
+    "lula_pct": 0.2171,
+    "flavio_pct": 0.7829,
+    "fonte": "Poder360 e Jornal Razão (boletins de urna do TSE); confere com Terra (78,29%)",
+    "visto_em": "2026-10-25T22:00:00-03:00"
+  },
+  {
+    "pais": "Suriname",
+    "lula": 172,
+    "flavio": 386,
+    "lula_pct": 0.3082,
+    "flavio_pct": 0.6918,
+    "fonte": "Poder360 e Jornal Razão (boletins de urna do TSE); confere com Terra (69,18%)",
+    "visto_em": "2026-10-25T22:00:00-03:00"
+  },
+  {
+    "pais": "Guiana",
+    "lula": 8,
+    "flavio": 47,
+    "lula_pct": 0.1455,
+    "flavio_pct": 0.8545,
+    "fonte": "Poder360 (boletins de urna do TSE); confere com Terra (14,55%)",
+    "visto_em": "2026-10-25T22:00:00-03:00"
+  },
+  {
+    "pais": "Panamá",
+    "lula": 267,
+    "flavio": 429,
+    "lula_pct": 0.3836,
+    "flavio_pct": 0.6164,
+    "fonte": "Jornal Razão (boletins de urna do TSE; 2 boletins); brancos 10, nulos 16; confere com Terra",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 722
+  },
+  {
+    "pais": "Peru",
+    "lula": 297,
+    "flavio": 424,
+    "lula_pct": 0.4119,
+    "flavio_pct": 0.5881,
+    "fonte": "Jornal Razão (boletins de urna do TSE; 3 boletins); brancos 12, nulos 10; confere com Terra",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 743
+  },
+  {
+    "pais": "Colômbia",
+    "lula": 281,
+    "flavio": 283,
+    "lula_pct": 0.4982,
+    "flavio_pct": 0.5018,
+    "fonte": "Jornal Razão (boletins de urna do TSE; 2 boletins); brancos 9, nulos 6; confere com Terra",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 579
+  },
+  {
+    "pais": "Jamaica",
+    "lula": 5,
+    "flavio": 11,
+    "lula_pct": 0.3125,
+    "flavio_pct": 0.6875,
+    "fonte": "Jornal Razão (boletins de urna do TSE); brancos 1, nulos 0; confere com Terra",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 17
+  },
+  {
+    "pais": "Guiana Francesa",
+    "lula": 599,
+    "flavio": 563,
+    "lula_pct": 0.5155,
+    "flavio_pct": 0.4845,
+    "fonte": "Jornal Razão (boletins de urna do TSE; 5 boletins); brancos 29, nulos 29; confere com Terra",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 1220
+  },
+  {
+    "pais": "Equador",
+    "lula": 158,
+    "flavio": 185,
+    "lula_pct": 0.4606,
+    "flavio_pct": 0.5394,
+    "fonte": "Jornal Razão (boletins de urna do TSE; 2 boletins); brancos 5, nulos 5",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 353
+  },
+  {
+    "pais": "Guatemala",
+    "lula": 43,
+    "flavio": 76,
+    "lula_pct": 0.3613,
+    "flavio_pct": 0.6387,
+    "fonte": "Jornal Razão (boletins de urna do TSE); brancos 0, nulos 1",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 120
+  },
+  {
+    "pais": "Costa Rica",
+    "lula": 180,
+    "flavio": 186,
+    "lula_pct": 0.4918,
+    "flavio_pct": 0.5082,
+    "fonte": "Jornal Razão (boletins de urna do TSE); brancos 4, nulos 8",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 378
+  },
+  {
+    "pais": "Honduras",
+    "lula": 20,
+    "flavio": 44,
+    "lula_pct": 0.3125,
+    "flavio_pct": 0.6875,
+    "fonte": "Jornal Razão (boletins de urna do TSE); brancos 0, nulos 1",
+    "visto_em": "2026-10-25T22:00:00-03:00",
+    "comparecimento": 65
   }
 ]

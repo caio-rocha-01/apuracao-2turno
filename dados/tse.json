@@ -86,5 +86,29 @@
     "flavio_votos": 55023647,
     "lula_pct": 0.5162,
     "flavio_pct": 0.4838
+  },
+  {
+    "hora": "2026-10-25T21:10:00-03:00",
+    "secoes_pct": 0.9827,
+    "lula_votos": 63049525,
+    "flavio_votos": 58795080,
+    "lula_pct": 0.5175,
+    "flavio_pct": 0.4825
+  },
+  {
+    "hora": "2026-10-25T21:16:00-03:00",
+    "secoes_pct": 0.9977,
+    "lula_votos": 64078503,
+    "flavio_votos": 59728246,
+    "lula_pct": 0.5176,
+    "flavio_pct": 0.4824
+  },
+  {
+    "hora": "2026-10-25T21:38:00-03:00",
+    "secoes_pct": 0.999,
+    "lula_votos": 64171319,
+    "flavio_votos": 59790152,
+    "lula_pct": 0.5177,
+    "flavio_pct": 0.4823
   }
 ]

@@ -541,5 +541,167 @@
     "validos": 70,
     "comparecimento": 74,
     "fonte": "InfoMoney e Jornal Razão, com dados do TSE (1º turno, 4/10); válidos calculados a partir dos percentuais publicados"
+  },
+  {
+    "pais": "Chile",
+    "lula": 928,
+    "flavio": 809,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos; confere com Poder360"
+  },
+  {
+    "pais": "Paraguai",
+    "lula": 546,
+    "flavio": 3848,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+  },
+  {
+    "pais": "Uruguai",
+    "lula": 797,
+    "flavio": 701,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+  },
+  {
+    "pais": "Venezuela",
+    "lula": 128,
+    "flavio": 125,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+  },
+  {
+    "pais": "República Dominicana",
+    "lula": 65,
+    "flavio": 106,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos; confere com Poder360"
+  },
+  {
+    "pais": "México",
+    "lula": 585,
+    "flavio": 589,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+  },
+  {
+    "pais": "Bolívia",
+    "lula": 349,
+    "flavio": 1387,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos; confere com Poder360"
+  },
+  {
+    "pais": "Suriname",
+    "lula": 121,
+    "flavio": 366,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+  },
+  {
+    "pais": "Guiana",
+    "lula": 7,
+    "flavio": 43,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+  },
+  {
+    "pais": "Panamá",
+    "lula": 236,
+    "flavio": 336,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+  },
+  {
+    "pais": "Peru",
+    "lula": 248,
+    "flavio": 380,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+  },
+  {
+    "pais": "Colômbia",
+    "lula": 245,
+    "flavio": 252,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+  },
+  {
+    "pais": "Jamaica",
+    "lula": 4,
+    "flavio": 14,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+  },
+  {
+    "pais": "Guiana Francesa",
+    "lula": 484,
+    "flavio": 518,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+  },
+  {
+    "pais": "Equador",
+    "lula": 130,
+    "flavio": 171,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+  },
+  {
+    "pais": "Guatemala",
+    "lula": 33,
+    "flavio": 67,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+  },
+  {
+    "pais": "Costa Rica",
+    "lula": 173,
+    "flavio": 159,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
+  },
+  {
+    "pais": "Honduras",
+    "lula": 17,
+    "flavio": 34,
+    "lula_pct": null,
+    "flavio_pct": null,
+    "validos": null,
+    "fonte": "Tribuna de Jundiaí (1º turno, 4/10, total do país); válidos desconhecidos"
   }
 ]
