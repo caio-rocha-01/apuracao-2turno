@@ -30,5 +30,61 @@
     "flavio_votos": 12530362,
     "lula_pct": 0.4959,
     "flavio_pct": 0.5041
+  },
+  {
+    "hora": "2026-10-25T20:11:00-03:00",
+    "secoes_pct": 0.3082,
+    "lula_votos": 18827520,
+    "flavio_votos": 19160811,
+    "lula_pct": 0.4956,
+    "flavio_pct": 0.5044
+  },
+  {
+    "hora": "2026-10-25T20:20:00-03:00",
+    "secoes_pct": 0.4158,
+    "lula_votos": 25535830,
+    "flavio_votos": 25711827,
+    "lula_pct": 0.4983,
+    "flavio_pct": 0.5017
+  },
+  {
+    "hora": "2026-10-25T20:26:00-03:00",
+    "secoes_pct": 0.4842,
+    "lula_votos": 29863964,
+    "flavio_votos": 29822911,
+    "lula_pct": 0.5003,
+    "flavio_pct": 0.4997
+  },
+  {
+    "hora": "2026-10-25T20:39:00-03:00",
+    "secoes_pct": 0.6203,
+    "lula_votos": 38729627,
+    "flavio_votos": 37850475,
+    "lula_pct": 0.5057,
+    "flavio_pct": 0.4943
+  },
+  {
+    "hora": "2026-10-25T20:46:00-03:00",
+    "secoes_pct": 0.7174,
+    "lula_votos": 45154463,
+    "flavio_votos": 43433275,
+    "lula_pct": 0.5097,
+    "flavio_pct": 0.4903
+  },
+  {
+    "hora": "2026-10-25T20:54:00-03:00",
+    "secoes_pct": 0.8075,
+    "lula_votos": 51212858,
+    "flavio_votos": 48596535,
+    "lula_pct": 0.5131,
+    "flavio_pct": 0.4869
+  },
+  {
+    "hora": "2026-10-25T21:05:00-03:00",
+    "secoes_pct": 0.9195,
+    "lula_votos": 58717861,
+    "flavio_votos": 55023647,
+    "lula_pct": 0.5162,
+    "flavio_pct": 0.4838
   }
 ]
