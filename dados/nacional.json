@@ -1,0 +1,17 @@
+{
+  "primeiro_turno": {
+    "lula": 53879538,
+    "flavio": 56104503,
+    "validos": 119300788,
+    "brancos": 2300798,
+    "nulos": 3674249,
+    "comparecimento": 125275835,
+    "aptos": 158745502,
+    "abstencao_pct": 0.2108,
+    "fonte": "CartaCapital, com dados do TSE (1º turno, 4/10, 100% das seções); percentuais conferem com Portal de Prefeitura e InfoMoney"
+  },
+  "segundo_turno": {
+    "abstencao_pct": 0.1921,
+    "fonte": "Poder360, InfoMoney e Gazeta do Povo, com dados do TSE (2º turno, 25/10)"
+  }
+}

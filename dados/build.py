@@ -13,8 +13,10 @@ exterior = json.loads((here / "exterior.json").read_text())
 tse = [r for r in json.loads((here / "tse.json").read_text()) if r.get("hora")]
 primeiro = json.loads((here / "primeiro_turno.json").read_text())
 aptos = json.loads((here / "aptos.json").read_text())["aptos"]
+nac_f = here / "nacional.json"
+nacional = json.loads(nac_f.read_text()) if nac_f.exists() else None
 gerado = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes")
-dados = json.dumps({"exterior": exterior, "tse": tse, "primeiro": primeiro, "aptos": aptos, "media_abst_r1": 0.6269, "gerado": gerado}, ensure_ascii=False).replace("</", "<\\/")
+dados = json.dumps({"exterior": exterior, "tse": tse, "primeiro": primeiro, "aptos": aptos, "nacional": nacional, "media_abst_r1": 0.6269, "gerado": gerado}, ensure_ascii=False).replace("</", "<\\/")
 
 html = (here / "public_template.html").read_text().replace("/*__DADOS__*/{}", dados)
 (here / "public.html").write_text(html)  # versão sem cabeçalho HTML

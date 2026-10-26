@@ -67,6 +67,15 @@
   .score-ref-bar .mid { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: var(--panel); }
   .score-ref-label { font-size: 0.75rem; color: var(--muted); margin: 0; font-variant-numeric: tabular-nums; }
   .score-src { grid-column: 1 / -1; font-size: 0.78rem; color: var(--muted); margin: 0; }
+  .score-comp { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 4px; border-top: 1px solid var(--line); padding-top: 12px; }
+  .score-comp .sc-title { margin: 0; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  .score-comp .sc-frase { margin: 0 0 2px; font-size: 0.9rem; }
+  .score-comp .delta, .score-comp .chg { font-size: 0.78rem; color: var(--muted); margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .score-comp .sc-abst { margin-top: 10px; }
+  .score-comp .atrack { background: var(--line); }
+  .score-comp .abar { grid-template-columns: 4.5rem 1fr 4.2rem; margin-top: 4px; }
+  .score-comp .abar .trow-label { font-size: 0.8rem; color: var(--muted); }
+  .score-comp .abar:not(.ref) .trow-label { color: var(--fg); font-weight: 600; }
 
   .wrap { padding-block: 30px 48px; }
   .wrap .inner { display: flex; flex-direction: column; gap: 44px; }
@@ -220,6 +229,7 @@
       </div>
       <div class="score-bar"><div class="l" id="bar-l"></div><div class="f" id="bar-f"></div><div class="mid"></div></div>
       <div class="score-ref" id="score-ref" hidden><div class="score-ref-bar"><div class="l" id="ref-l"></div><div class="o" id="ref-o"></div><div class="f" id="ref-f"></div><div class="mid"></div></div><p class="score-ref-label" id="ref-label"></p></div>
+      <div class="score-comp" id="score-comp" hidden></div>
       <p class="score-src" id="score-source"></p>
     </div>
   </div>
@@ -429,6 +439,38 @@
       const tr = el('div', 'trow ' + cls); tr.append(el('div', 'trow-label', lab), stack(parts, tot / max * 100, lab)); box.append(tr);
     });
   };
+
+  // Placar: comparação nacional com o 1º turno (mesmo modelo dos países) e abstenção geral
+  const nf1 = new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const pf2 = new Intl.NumberFormat('pt-BR', { style: 'percent', minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const N1 = D.nacional && D.nacional.primeiro_turno, N2 = D.nacional && D.nacional.segundo_turno;
+  if (last && last.lula_votos != null && N1) {
+    const box = $('score-comp');
+    const c = { l1: N1.lula, f1: N1.flavio, o1: N1.validos - N1.lula - N1.flavio, l2: last.lula_votos, f2: last.flavio_votos };
+    box.append(el('p', 'sc-title', 'Comparação com o 1º turno · Brasil e exterior'));
+    box.append(el('p', 'sc-frase', fraseDe(c.l1 - c.f1, c.l2 - c.f2)));
+    barras(box, c);
+    box.append(el('div', 'delta', `Desde o 1º turno: Lula ${sgn(c.l2 - c.l1)} · Flávio ${sgn(c.f2 - c.f1)} · outros tinham ${nf.format(c.o1)}`));
+    if (N2 && N2.abstencao_pct != null && N1.abstencao_pct != null) {
+      const ab = el('div', 'sc-abst');
+      ab.append(el('p', 'sc-title', 'Abstenção geral'));
+      [['2º turno', N2.abstencao_pct, ''], ['1º turno', N1.abstencao_pct, 'ref']].forEach(([lab, v, cls]) => {
+        const bar = el('div', 'abar ' + cls);
+        const tr = el('div', 'atrack'); const fl = el('div', 'afill'); fl.style.width = (v * 100) + '%'; tr.append(fl);
+        bar.append(el('div', 'trow-label', lab), tr, el('div', 'aval', pf2.format(v)));
+        ab.append(bar);
+      });
+      const pp = (N1.abstencao_pct - N2.abstencao_pct) * 100;
+      const verbo = pp > 0 ? 'caiu' : pp < 0 ? 'subiu' : 'ficou igual';
+      let txt = `Abstenção ${verbo} de ${pf2.format(N1.abstencao_pct)} para ${pf2.format(N2.abstencao_pct)}`;
+      if (pp !== 0) txt += ` (${nf1.format(Math.abs(pp))} ponto${Math.abs(pp) >= 2 ? 's' : ''} percentual${Math.abs(pp) >= 2 ? 'is' : ''})`;
+      if (N1.aptos && pp !== 0) txt += ` · cerca de ${nf1.format(Math.abs(pp) / 100 * N1.aptos / 1e6)} milhões de eleitores ${pp > 0 ? 'a mais' : 'a menos'} votaram`;
+      ab.append(el('div', 'chg', txt + '.'));
+      box.append(ab);
+    }
+    box.append(el('p', 'score-src', `1º turno: ${N1.fonte}.${N2 && N2.fonte ? ' Abstenção no 2º turno: ' + N2.fonte + '.' : ''}`));
+    box.hidden = false;
+  }
 
   // Destaque: soma dos países com os dois turnos
   const hero = $('hero');
